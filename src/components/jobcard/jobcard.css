@@ -1,0 +1,39 @@
+    .whole-card{
+        display: inline-block;
+        margin: 15px;
+    }
+    .whole-card:hover  .card-body{
+        transform: translate(0, -10px);
+        animation:animate .1s ease;
+    }
+    .card{
+        border: none;
+        background-color:white;
+    }
+    .card-body{
+        background-color:white;
+        border-left: 3px solid #ff5417;
+        font-size: 16px;
+        max-height: 200px;
+        line-height: 1.2rem;
+        overflow-y: hidden;
+        
+    }
+
+
+    /* .card-body:hover{
+        transform: translate(0, -50%);
+        animation:animate .1s linear;
+    } */
+
+    @keyframes animate {
+        0% {
+            transform: translate(0, 0) 
+        }
+        50%{
+            transform: translate(0,-5px);
+        }
+        100% {
+            transform: translate(0, -10px) 
+        }
+    }

@@ -1,6 +1,6 @@
 .nav-link{
     font-size: 18px;
-    margin:10px 0 5px 10px;
+    /* margin:10px 0 5px 10px; */
     color: white;
 
 }
@@ -25,6 +25,4 @@
   }
 
 
-  .fa-solid{
-    margin-left: 10px;
-  }
+  

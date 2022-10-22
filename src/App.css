@@ -19,7 +19,25 @@
 }
 
 .content{
-  margin-top: 6.5vh;
+  justify-content: center;
+}
+
+.txt-primary{
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+.txt-secondary{
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+} 
+.txt-desc{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: black;
 }
 
 @keyframes App-logo-spin {
