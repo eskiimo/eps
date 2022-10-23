@@ -27,19 +27,19 @@ const HomePage = () => {
    ];
    return (
       <>
-         <div className="section-1">
+         <div className="section section-1">
             <p className="txt-secondary">Electric Utility Provider</p>
             <p className="txt-primary">Electrical testing and measurements.</p>
             <p className="txt-desc">ESP</p>
             <button className="buton">SEE MORE ..</button>
          </div>
 
-         <div className="section-2">
+         <div className="section section-2">
             <p className="header1">
                Our <span className="header2">Services</span>
             </p>
 
-            <div className="container row center">
+            <div className=" row center">
                <CardList list={jobs} />
             </div>
          </div>

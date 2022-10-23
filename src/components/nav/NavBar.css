@@ -27,8 +27,8 @@
 .navbar .col-links{
     margin: auto;
     display: flex;
-    text-align: end;
-    justify-content: end;
+    text-align: flex-end;
+    justify-content: flex-end;
 }
 
 .nav-links a{
@@ -46,8 +46,8 @@
 .nav-links{
     color: black ; 
     display: flex;
-    justify-content: end;
-    justify-items: end;
+    justify-content: flex-end;
+    justify-items: flex-end;
 }
 .navbar-toggler{
     display: none;

@@ -1,0 +1,42 @@
+.footer{
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    padding: 5vh 20vh 5vh 20vh ;
+
+}
+
+.footer .txt{
+    color: white !important;
+}
+
+.footer .desc{
+    font-size: 14px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+
+.contact-icon  i{
+    height: max-content;
+
+    font-size: 30px;
+    color:  #ff5417;
+}
+.rights{
+    position: absolute;
+    bottom: 15px;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+.rights span{
+    color: #ff5417;
+}
