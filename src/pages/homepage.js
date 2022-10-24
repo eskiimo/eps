@@ -1,5 +1,6 @@
 import React from 'react';
 import CardList from '../components/jobcard/cardlist';
+import ContactPage from './contactpage';
 import './homepage.css';
 
 const HomePage = () => {
@@ -43,6 +44,8 @@ const HomePage = () => {
                <CardList list={jobs} />
             </div>
          </div>
+
+         <ContactPage />
       </>
    );
 };

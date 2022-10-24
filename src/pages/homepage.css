@@ -15,7 +15,7 @@
     display: block;
     text-align: start;
     align-items: center;
-    padding-left:7vw ;
+    padding-left:10vw ;
     padding-top: 25vh;
 }
 .section-1 .txt-primary{
@@ -87,5 +87,7 @@
    }
    
    */
-  
+  .section-2 .center{
+    padding-left:5vh 10vw;
+  }
    
