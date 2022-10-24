@@ -56,7 +56,7 @@ const Footer = () => {
                </p>
             </div>
          </div>
-         <div className="container rights">
+         <div className=" rights">
             {' '}
             &#169; 2022<span> EPS. </span> All rightes reserved.
          </div>

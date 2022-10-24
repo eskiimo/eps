@@ -1,0 +1,28 @@
+.form-control {
+    border-radius: 0;
+    border: 1px solid #ff5417 ;
+    background-color: transparent;
+    color: #ff5417;
+    font-size: 14px;
+    width: 90%;
+   }
+   .error-text {
+    text-align: start;
+    color: rgb(253, 33, 85);
+   }
+   .form-control__invalid {
+    border: 2px solid rgb(253, 33, 85);
+    color: rgb(253, 33, 85);
+   }
+   .form-control:focus {
+    outline: none;
+    background-color: transparent;
+  
+    box-shadow: none;
+    font-size: 14px;
+    
+   }
+
+.form{
+    margin-top: 50px;
+}
