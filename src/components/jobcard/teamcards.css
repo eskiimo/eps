@@ -1,0 +1,53 @@
+.teamcard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.whole-card:hover  .overlay{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    -moz-transition: height 0.7s ease-in-out;
+    -o-transition: height 0.7s ease-in-out;
+    -webkit-transition: height 0.7s ease-in-out;
+    transition: height 0.7s ease-in-out;
+}
+
+.whole-card:hover .title{
+    display:block;
+}
+
+.overlay {
+    bottom: 0;
+    position: absolute;
+    z-index: 99;
+    background: #ff5417;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .overlay .txt-desc{
+    color: white;
+  }
+
+
+  .overlay .name{
+    font-size: 1.8rem;
+  }
+  .overlay .title{
+    font-size: 1.3rem;
+    display: none;
+  }
+
+  .overlay p{
+    font-size: 1.1rem;
+  }
