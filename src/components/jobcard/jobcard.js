@@ -6,7 +6,7 @@ import './jobcard.css';
 const JobCard = (props) => {
    var cropped = props.jobDesc.substring(0, 50) + '...';
    return (
-      <div className="col-md-4 whole-card">
+      <div className="col-sm-6 col-md-4 whole-card">
          <Card>
             <CardImg
                alt="Card image cap"

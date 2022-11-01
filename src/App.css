@@ -20,7 +20,7 @@
 
 .content{
   justify-content: center;
-  margin-top: 10vh;
+  margin: 10vh 10vw 0 10vw;
 }
 
 .txt-primary{

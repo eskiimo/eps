@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, CardImg } from 'reactstrap';
 
-import './teamcards.css';
+import './projectcard.css'
 
-const TeamCards = (props) => {
-  return props.list.map((item =>(
-    <div className="col-sm-6 col-md-4 teamcard whole-card">
-           
-            <Card>
+
+const ProjectCards = (props) => {
+    return props.list.map((item)=>(
+        <div className='col-xs-12 col-md-3 projectcard' >
+             <Card>
                <CardImg
                   alt="Card image cap"
                   src={item.image}
@@ -15,7 +15,7 @@ const TeamCards = (props) => {
                   width="100%"
                />
              
-               <div className='overlay'>
+               {/* <div className='overlay'>
                  <div>
                     <h1 className='name'>
                         {item.name}
@@ -27,12 +27,10 @@ const TeamCards = (props) => {
                         <p>{item.desc}</p>
                     </div>
                  </div>
-               </div>
+               </div> */}
             </Card>
-           
-           
         </div>
-  )))
-};
-
-export default TeamCards;
+    ))
+}
+ 
+export default ProjectCards;

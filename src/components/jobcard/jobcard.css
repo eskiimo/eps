@@ -1,6 +1,6 @@
     .section-2 .whole-card{
         display: inline-block;
-        margin: 15px;
+        margin-bottom: 5vh;
     }
     .whole-card:hover  .card-body{
         transform: translate(0, -10px);
@@ -20,12 +20,6 @@
         overflow-y: hidden;
         
     }
-
-
-    /* .card-body:hover{
-        transform: translate(0, -50%);
-        animation:animate .1s linear;
-    } */
 
     @keyframes animate {
         0% {

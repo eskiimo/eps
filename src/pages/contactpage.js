@@ -58,7 +58,7 @@ const ContactPage = () => {
 
    return (
       <div className="section section-3 row">
-         <div className="col col-md-6">
+         <div className="col col-sm-12 col-md-6">
             <h1 className="txt-secondary">Contact Information</h1>
             <h1 className="txt-desc">
                for any inquiry about the buisiness or/and requisting a service
@@ -161,7 +161,7 @@ const ContactPage = () => {
                            type="submit"
                            width={'30%'}
                         >
-                           send
+                           Send
                         </button>
                      </div>
                   </Form>
