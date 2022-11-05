@@ -1,6 +1,8 @@
     .section-2 .whole-card{
         display: inline-block;
-        margin-bottom: 5vh;
+        margin: 5vh;
+        max-width: 40%;
+        
     }
     .whole-card:hover  .card-body{
         transform: translate(0, -10px);
@@ -16,6 +18,7 @@
         border-left: 3px solid #ff5417;
         font-size: 16px;
         max-height: 200px;
+        min-height: 150px;
         line-height: 1.2rem;
         overflow-y: hidden;
         

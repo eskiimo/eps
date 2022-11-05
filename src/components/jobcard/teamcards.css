@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.9;
     -moz-transition: height 0.7s ease-in-out;
     -o-transition: height 0.7s ease-in-out;
     -webkit-transition: height 0.7s ease-in-out;
@@ -50,4 +50,5 @@
 
   .overlay p{
     font-size: 1.1rem;
+    margin: 15px;
   }

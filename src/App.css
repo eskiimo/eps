@@ -20,7 +20,7 @@
 
 .content{
   justify-content: center;
-  margin: 10vh 10vw 0 10vw;
+  /* margin: 10vh 10vw 0 10vw; */
 }
 
 .txt-primary{
@@ -29,7 +29,7 @@
   color: black;
 }
 .txt-secondary{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: black;
 } 

@@ -59,11 +59,13 @@ const ContactPage = () => {
    return (
       <div className="section section-3 row">
          <div className="col col-sm-12 col-md-6">
+            <div className='contact-head'>
             <h1 className="txt-secondary">Contact Information</h1>
             <h1 className="txt-desc">
                for any inquiry about the buisiness or/and requisting a service
                please contact ..
             </h1>
+            </div>
             <div className="icons">
                <div className=" contact-icon">
                   <a
@@ -115,10 +117,12 @@ const ContactPage = () => {
 
          <div className="col col-md-6">
             <div>
+               <div className='contact-head'>
                <h1 className="txt-secondary">Get In Touch</h1>
                <h1 className="txt-desc">
                   send a message and we will get back to you
                </h1>
+               </div>
                <div>
                   <Form
                      autoComplete="off"
