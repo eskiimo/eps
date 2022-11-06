@@ -5,21 +5,25 @@
     padding: 10vh 20vh 0 20vh;
     
 }
+@media(max-width:1000px) 
+{
+    .section{
+        padding: 20px;
+    }
+   
+}
 
 
 .section-1{
     
-    /* background-color: blueviolet; */
     background-image: url('/public/assets/electric-01.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* margin: 0%; */
     display: block;
     text-align: start;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-left:15vw ;
-    padding-top: 25vh;
 }
 .section-1 .txt-primary{
     font-size: 3rem;
@@ -49,14 +53,14 @@
 }
 .section-2 .row{
     justify-content: center;
-    margin-right:3vw;
-    margin-left: 3vw;
+    /* margin-right:3vw;
+    margin-left: 3vw; */
     
 }
 .section-2 .header1{
     display:inline;
     color: black;
-    margin: 5vw;
+    margin: 2vh 5vw;
     font-size: 32px;
     font-weight: 900;
 }
@@ -75,7 +79,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #e0e0e0;
 }
 .section-4 .row{
     justify-content: center;
@@ -86,8 +90,7 @@
 .section-4 .header1{
     display:inline;
     color: black;
-    margin: 5vw ;
-    margin-top: 5vh;
+    margin: 0 5vw 5vw 5vw ;
     font-size:32px;
     font-weight: 900;
 }
@@ -101,8 +104,11 @@
 }
 
 .buton {
-    margin-top: 30px;
-    color:white;
+    position: fixed;
+    bottom: 5vh;
+    right: 15vw;
+    z-index: 99;
+   
     background-color: #ff5417;
     border: none;
     height:50px ;
@@ -114,6 +120,12 @@
     text-align: center;
    }
 
+   .buton a{
+    text-decoration: none; color:white;
+   }
+   .buton .fa-paper-plane{
+    margin-right: 10px;
+   }
 
    
   .section-4 .center{

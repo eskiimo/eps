@@ -1,7 +1,6 @@
     .section-2 .whole-card{
         display: inline-block;
-        margin: 5vh;
-        max-width: 40%;
+        margin:2vw
         
     }
     .whole-card:hover  .card-body{
@@ -35,3 +34,4 @@
             transform: translate(0, -10px) 
         }
     }
+

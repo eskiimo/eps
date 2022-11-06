@@ -2,7 +2,8 @@ import React from 'react';
 import CardList from '../components/jobcard/cardlist';
 import ProjectCards from '../components/jobcard/projectcard';
 import TeamCards from '../components/jobcard/teamcards';
-import ContactPage from './contactpage';
+import { NavLink } from 'react-router-dom';
+import Footer from './footer';
 import './homepage.css';
 
 const HomePage = () => {
@@ -52,25 +53,49 @@ const HomePage = () => {
    ];
    const projects = [
       {
-         image: 'https://picsum.photos/318/318',
+         image: '/logos/GCH.jpg',
          name:"Mohamad Kamal",
          title: 'CEO & Founder',
          desc: 'Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.',
       },
       {
-         image: 'https://picsum.photos/318/318',
+         image: '/logos/GPC.jpg',
          name:"Mohamad Kamal",
          title: 'CEO & Founder',
          desc: 'sdsdjskdjskdjskdjskdj',
       },
       {
-         image: 'https://picsum.photos/318/318',
+         image: '/logos/QNB.jpg',
          name:"Mohamad Kamal",
          title: 'CEO & Founder',
          desc: 'sdsdjskdjskdjskdjskdj',
       },
       {
-         image: 'https://picsum.photos/318/318',
+         image: '/logos/NDC.jpg',
+         name:"Mohamad Kamal",
+         title: 'CEO & Founder',
+         desc: 'sdsdjskdjskdjskdjskdj',
+      },
+      {
+         image: '/logos/mallAR.jpg',
+         name:"Mohamad Kamal",
+         title: 'CEO & Founder',
+         desc: 'Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.',
+      },
+      {
+         image: '/logos/EGPost.jpg',
+         name:"Mohamad Kamal",
+         title: 'CEO & Founder',
+         desc: 'sdsdjskdjskdjskdjskdj',
+      },
+      {
+         image: '/logos/DPWORLD.jpg',
+         name:"Mohamad Kamal",
+         title: 'CEO & Founder',
+         desc: 'sdsdjskdjskdjskdjskdj',
+      },
+      {
+         image: '/logos/Citycenter.jpg',
          name:"Mohamad Kamal",
          title: 'CEO & Founder',
          desc: 'sdsdjskdjskdjskdjskdj',
@@ -82,7 +107,7 @@ const HomePage = () => {
             <p className="txt-secondary">Electric Utility Provider</p>
             <p className="txt-primary">Electrical testing and measurements.</p>
             <p className="txt-desc">ESP</p>
-            <button className="buton">SEE MORE ..</button>
+            <button className="buton"><i className="fa-sharp fa-solid fa-paper-plane"></i> <NavLink to="/contact">CONTACT</NavLink></button>
          </div>
 
          <div className="section section-2" id="section-2">
@@ -108,13 +133,14 @@ const HomePage = () => {
 
          <div className='section section-5' id='section-5'>
             <p className="header5">
-                  Meet <span className="header2">Projects</span>
+                  Success <span className="header2">Partners</span>
             </p>
             <div className=" row center">
               <ProjectCards list ={projects}/>
             </div>   
          </div>
 
+         <Footer />
         
       </>
    );
