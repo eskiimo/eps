@@ -6,8 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ResponsiveAppBar from './components/nav/NavBar';
 import HomePage from './pages/homepage';
 import ContactPage from './pages/contactpage';
-import AboutPage from './pages/aboutpage';
-import Footer from './pages/footer';
+import Blogs from './pages/blogs';
 
 const App = () => {
    return (
@@ -19,7 +18,8 @@ const App = () => {
                   <Route path="/" element={<HomePage />}></Route>
                   <Route path="/contact" element={<ContactPage />}></Route>
 
-                  <Route path="/about" element={<AboutPage />}></Route>
+                  
+                  <Route path="/blogs" element={<Blogs />}></Route>
                </Routes>
             </div>
          </Router>

@@ -105,8 +105,8 @@
 
 .buton {
     position: fixed;
-    bottom: 5vh;
-    right: 15vw;
+    bottom: 8vh;
+    right: 12vw;
     z-index: 99;
    
     background-color: #ff5417;
