@@ -58,7 +58,7 @@ const CustomInput = (props) => {
             id={props.id}
             placeholder={props.placeholder}
             type={props.type}
-            rows={props.rows || 3}
+            rows={ 5}
             onChange={changeHandler}
             onBlur={touchHandler}
             value={inputState.value}

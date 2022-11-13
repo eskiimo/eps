@@ -3,8 +3,9 @@
     border: 1px solid #ff5417 ;
     background-color: transparent;
     color: #ff5417;
-    font-size: 14px;
+    font-size: 18px;
     width: 100%;
+    min-height: 40px;
    }
    .error-text {
     text-align: start;
@@ -23,6 +24,3 @@
     
    }
 
-.form{
-    margin-top: 50px;
-}

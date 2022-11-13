@@ -6,7 +6,7 @@ import './projectcard.css'
 
 const ProjectCards = (props) => {
     return props.list.map((item)=>(
-        <div className='col-xs-12 col-md-3 projectcard' >
+        <div className='col-xs-12 col-md-2 projectcard' >
              <Card>
                <CardImg
                   alt="Card image cap"
