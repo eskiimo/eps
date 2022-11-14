@@ -1,5 +1,5 @@
 .section{
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100%;
     padding-bottom: 100px;
     padding: 10vh 20vh 0 20vh;
@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 10vw;
+    min-height: 100vh !important;
 }
 .section-1 .txt-primary{
     font-size: 3rem;
