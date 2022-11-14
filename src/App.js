@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ResponsiveAppBar from './components/nav/NavBar';
 import HomePage from './pages/homepage';
 import ContactPage from './pages/contactpage';
-import Blogs from './pages/blogs';
+import ServicePage from './pages/ServicePage';
 
 const App = () => {
    return (
@@ -19,7 +19,7 @@ const App = () => {
                   <Route path="/contact" element={<ContactPage />}></Route>
 
                   
-                  <Route path="/blogs" element={<Blogs />}></Route>
+                  <Route path="/services/:serviceId" element={<ServicePage />}></Route>
                </Routes>
             </div>
          </Router>

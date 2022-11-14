@@ -5,7 +5,7 @@ import './teamcards.css';
 
 const TeamCards = (props) => {
   return props.list.map((item =>(
-    <div className="col-sm-6 col-md-4 teamcard whole-card">
+    <div key={item.title} className="col-sm-6 col-md-4 teamcard whole-card">
            
             <Card>
                <CardImg

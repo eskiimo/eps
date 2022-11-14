@@ -46,7 +46,7 @@ const Footer = () => {
                </div>
             </div>
             <div className="col col-md-4">
-               <p className="txt txt-secondary"> Quick Links</p>{' '}
+               {/* <p className="txt txt-secondary"> Quick Links</p>{' '} */}
             </div>
             <div className="col col-md-4">
                <p className="txt txt-secondary">Email</p>

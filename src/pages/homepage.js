@@ -53,6 +53,12 @@ const HomePage = () => {
    ];
    const projects = [
       {
+         image: '/logos/Citycenter.jpg',
+         name:"Mohamad Kamal",
+         title: 'CEO & Founder',
+         desc: 'sdsdjskdjskdjskdjskdj',
+      },
+      {
          image: '/logos/GCH.jpg',
          name:"Mohamad Kamal",
          title: 'CEO & Founder',
@@ -94,12 +100,7 @@ const HomePage = () => {
          title: 'CEO & Founder',
          desc: 'sdsdjskdjskdjskdjskdj',
       },
-      {
-         image: '/logos/Citycenter.jpg',
-         name:"Mohamad Kamal",
-         title: 'CEO & Founder',
-         desc: 'sdsdjskdjskdjskdjskdj',
-      },
+      
    ];
    return (
       <>

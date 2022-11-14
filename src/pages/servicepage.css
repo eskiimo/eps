@@ -1,0 +1,12 @@
+.service-page{
+    margin-top: 10vh;
+}
+
+.service-page .scol {
+    display: flex;
+    flex-direction: column;
+}
+
+.scol button {
+    margin: 20px 20px 20px 0;
+}
