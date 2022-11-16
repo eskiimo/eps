@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./contactpage.css";
+import firestore from '../hooks/firebase';
+import {addDoc,collection} from '@firebase/firestore';
+
+import Spinner from 'react-bootstrap/Spinner';
 
 import {
   Form,
-  FormGroup,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  ModalFooter,
+  FormGroup
 } from "reactstrap";
 
 import {
@@ -20,8 +20,10 @@ import CustomInput from "../components/formelements/input";
 import { useForm } from "../hooks/formhook";
 
 const ContactPage = () => {
-  const [bool, setBool] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [isToast, setIsToast] = useState(false);
+  const ref = collection(firestore, "messages")
+
   const [formState, inputHandler] = useForm(
     {
       name: { value: "", isValid: false },
@@ -33,7 +35,21 @@ const ContactPage = () => {
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
-    console.log(formState.inputs);
+    let newMSG = {
+      name:formState.inputs.name.value,
+      email:formState.inputs.email.value,
+      message: formState.inputs.message.value
+    }    
+    setIsLoading(true)
+    
+    try{
+      setTimeout(2000)
+       await addDoc(ref,newMSG)
+      setIsLoading(false)
+    }catch(e){
+      console.log(e)
+      setIsLoading(false)
+    }
 
     // try {
     //    const response = await fetch(process.env.REACT_APP_BACKENDURL, {
@@ -151,11 +167,20 @@ const ContactPage = () => {
                 onInput={inputHandler}
               />
             </FormGroup>
+           {
+           isLoading? (
             <div className="form-button">
-              <button disabled={!formState.isValid} type="submit" width={"30%"}>
-                Send
-              </button>
-            </div>
+            <Spinner animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </Spinner>
+          </div>
+           ) : (
+             <div className="form-button">
+             <button disabled={!formState.isValid} type="submit" width={"30%"}>
+               Send
+             </button>
+           </div>
+           ) }
           </Form>
         </div>
       </div>
