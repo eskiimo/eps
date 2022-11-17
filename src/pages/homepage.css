@@ -15,9 +15,10 @@
 
 
 .section-1{
-    background-image: url('/public/assets/electric-01.jpg');
+    background-image: url('/public/assets/electric-01.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
+    background-position: center;
     display: block;
     text-align: start;
     display: flex;
@@ -25,12 +26,14 @@
     justify-content: center;
     padding-left: 10vw;
     min-height: 100vh !important;
+    background-color: #254b45;
 }
 .section-1 .txt-primary{
-    font-size: 3rem;
-    font-weight: 900;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: 400; font-family: fantasy;;
     color: white;
+    width: 50%;
+    line-height: 10vh;
     
 }
 .section-1 .txt-secondary{
@@ -49,8 +52,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
+    min-height: 70vh;
+    background-color: #254b45;
+    padding-top: 0;
 }
 .section-2 .row{
     justify-content: center;
@@ -58,12 +62,16 @@
 .section-2 .header1{
     display:inline;
     color: black;
-    margin: 2vh 5vw;
-    font-size: 32px;
-    font-weight: 900;
+    font-size:4rem;
+    font-weight: 400;
+}
+.section-2 .txt-desc{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
 }
 .section-2 span{
-    color: #ff5417;
+    color: #f68632;
 }
 .section-2 .container{
     margin: auto;
@@ -76,8 +84,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #e0e0e0;
+    min-height: 70vh;
+    background-color: #254b45;
 }
 .section-4 .row{
     justify-content: center;
@@ -88,12 +96,11 @@
 .section-4 .header1{
     display:inline;
     color: black;
-    margin: 0 5vw 5vw 5vw ;
-    font-size:32px;
-    font-weight: 900;
+    font-size:4rem;
+    font-weight: 400;
 }
 .section-4 span{
-    color: #ff5417;
+    color: #f68632;
 }
 .section-4 .container{
     margin: auto;
@@ -104,13 +111,13 @@
 .buton {
     position: fixed;
     bottom: 8vh;
-    right: 12vw;
+    right: 10vw;
     z-index: 99;
    
-    background-color: #ff5417;
+    background-color: #f68632;
     border: none;
     height:50px ;
-    width: 250px;
+    width: 200px;
     font-size: 18px;
     font-weight: 200;
     min-width: 20vh;
@@ -130,26 +137,23 @@
     justify-content: center;
 }
 
-
-.section-5 .row{
-    justify-content: center;
-    margin-left:4vw ;
-    margin-right: 4vw;
+.section-5{
     
+    background-color:#254b45;
 }
+
 .header5{
     display:inline;
     color: black;
-    font-size: 32px;
-    font-weight: 900;
-    margin: 5vw;
+    font-size:4rem;
+    font-weight: 400;
 }
 .section-5 span{
-    color: #ff5417;
+    color: #f68632;
 }
 
 .section-5 .row{
     display: flex;
     justify-content: flex-start;
-    margin: 4vw;
+    margin: 0vw;
 }

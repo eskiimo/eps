@@ -1,12 +1,28 @@
-.service-page{
-    margin-top: 10vh;
+.service-page {
+  margin-top: 10vh;
+  background-color: #254b45;
+  height: 100vh;
+  color: #fff;
+  padding: 10vw;
 }
-
+.service-page .row {
+  display: flex;
+  justify-content: space-between;
+}
 .service-page .scol {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .scol button {
-    margin: 20px 20px 20px 0;
+  margin: 20px 20px 20px 0;
+}
+
+.service-page h1 {
+  font-size: 4rem;
+  font-family: fantasy;
+}
+
+.service-page h3 {
+  font-size: 1.5rem;
 }

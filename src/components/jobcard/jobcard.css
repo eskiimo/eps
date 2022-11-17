@@ -1,11 +1,18 @@
     .section-2 .whole-card{
         display: inline-block;
-        margin:2vw
+        /* margin:1vw */
         
     }
+    
+    .whole-card:hover  {
+        cursor: pointer;
+    }
+    
+
     .whole-card:hover  .card-body{
         transform: translate(0, -10px);
         animation:animate .1s ease;
+        
     }
     .card{
         border: none;
@@ -14,7 +21,7 @@
     }
     .card-body{
         background-color:white;
-        border-left: 3px solid #ff5417;
+        border-left: 3px solid #05386B;
         font-size: 16px;
         max-height: 200px;
         min-height: 150px;
@@ -22,6 +29,12 @@
         overflow-y: hidden;
         
     }
+    .card-text{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+    }
+    
 
     @keyframes animate {
         0% {

@@ -2,7 +2,7 @@
     position: relative;
     background-color: black;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     padding: 5vh 20vh 5vh 20vh ;
 
 }
@@ -26,7 +26,7 @@
     height: max-content;
 
     font-size: 30px;
-    color:  #ff5417;
+    color:  #f68632;
 }
 .rights{
     position: absolute;
@@ -38,5 +38,5 @@
     font-weight: 100;
 }
 .rights span{
-    color: #ff5417;
+    color: #f68632;
 }

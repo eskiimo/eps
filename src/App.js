@@ -10,7 +10,7 @@ import ServicePage from './pages/ServicePage';
 
 const App = () => {
    return (
-      <div>
+      <div className='app'>
          <Router>
             <ResponsiveAppBar />
             <div className="content">

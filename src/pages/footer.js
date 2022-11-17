@@ -51,8 +51,7 @@ const Footer = () => {
             <div className="col col-md-4">
                <p className="txt txt-secondary">Email</p>
                <p className="txt desc">
-                  Quisque imperdiet sapien porttito the bibendum sellentesque
-                  the commodo erat acar accumsa lobortis, enim diam the nesuen.{' '}
+               info@eps.com.eg{' '}
                </p>
             </div>
          </div>

@@ -8,7 +8,7 @@ const JobCard = (props) => {
    const nav = useNavigate()
    var cropped = props.jobDesc.substring(0, 50) + '...';
    return (
-      <div className="col-sm-10 col-md-5 whole-card">
+      <div className="col-sm-10 col-md-3 whole-card">
          <Card onClick={()=>{nav(`/services/${props.jobTitle}`,{state:{props}})}}>
             <CardImg
                alt="Card image cap"
@@ -21,7 +21,7 @@ const JobCard = (props) => {
                   {props.jobTitle}
                </CardTitle>
 
-               <CardText className="txt-desc">{cropped}</CardText>
+               <CardText className='card-text'>{cropped}</CardText>
             </CardBody>
          </Card>
       </div>

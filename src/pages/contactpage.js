@@ -21,7 +21,6 @@ import { useForm } from "../hooks/formhook";
 
 const ContactPage = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [isToast, setIsToast] = useState(false);
   const ref = collection(firestore, "messages")
 
   const [formState, inputHandler] = useForm(
@@ -76,17 +75,17 @@ const ContactPage = () => {
     <div className="section section-3 row">
       <div className="row row1">
         <div className="contact-head">
-          <h1 className="txt-secondary">Contact Information</h1>
-          <h1 className="txt-desc">
+          <h1 >Contact Information</h1>
+          <p  className="p-desc">
             for any inquiry about the buisiness or/and requisting a service
             please contact ..
-          </h1>
+          </p>
         </div>
         <div className="contact-head">
-          <h1 className="txt-secondary">Get In Touch</h1>
-          <h1 className="txt-desc">
+          <h1 >Get In Touch</h1>
+          <p className="p-desc">
             send a message and we will get back to you
-          </h1>
+          </p>
         </div>
       </div>
 

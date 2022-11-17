@@ -13,7 +13,7 @@ const ServicePage = () => {
    return (
       <div className="section service-page">
          <div className='row '>
-            <div className='col col-md-6 scol'>
+            <div className='col col-md-5 scol'>
                <img src={obj.jobImage} />
                <button onClick={()=>{alert("will open Modal")}}> calculate</button>
             </div>
