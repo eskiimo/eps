@@ -1,96 +1,96 @@
-.section-3{
-    background-color: #254b45;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    color:#fff;
+.section-3 {
+  background-color: #254b45;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
 }
-.section-3 .col{
-    padding: 10vh 0 5vh 5vw;
-    /* display: flex;
+.section-3 .col {
+  padding: 10vh 0 5vh 5vw;
+  /* display: flex;
     justify-content: center;
     flex-direction: column; */
 }
 
-.section-3 .icons{
-    height: 50vh;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    line-height: 1rem;
+.section-3 .icons {
+  height: 50vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1rem;
 }
-.contact-head{
-    min-height: 20vh;
-    max-width:50% ;
-    color: #fff;
+.contact-head {
+  min-height: 20vh;
+  max-width: 50%;
+  color: #fff;
 }
-.contact-head h1{
-    font-size: 3.5rem;
-    font-family:fantasy;
-    font-weight: 400;
+.contact-head h1 {
+  font-size: 3.5rem;
+  font-family: fantasy;
+  font-weight: 400;
 }
-.p-desc{
-    font-size: 1.2rem;
-    font-family:fantasy;
+.p-desc {
+  font-size: 1.2rem;
+  font-family: fantasy;
 }
-.section-3 .contact-icon{
-    border-right: 2px solid #f68632;
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    margin-bottom: 50px;
+.section-3 .contact-icon {
+  border-right: 2px solid #112d32;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  margin-bottom: 50px;
 }
 .section-3 .contact-icon i {
-    font-size: 40px !important;
+  font-size: 40px !important;
+  color: #112d32;
 }
-.row1{
-    display: flex;
-    flex-direction: row;
-    margin-top: 15vh;
+.row1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
 }
-.row2{
-    display: flex;
-    flex-direction: row;
+.row2 {
+  display: flex;
+  flex-direction: row;
 }
-.form{
-    margin-top: 0;
+.form {
+  margin-top: 0;
 }
-.form-container{
-    max-width: 50%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
-
-}
-
-.icon-about{
-    display:flex;
-    flex-direction:column;
-    height: 100px;
-    margin-left: 20px;
+.form-container {
+  max-width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.icon-about .tag{
-    font-weight: 900;
-    font-size:1.3rem;
-    margin:0 0 5px 0;
-
-}
-.icon-about .content{
-    font-size:1rem;
-    font-weight:100;
-    /* height: 50px; */
-    margin: 0;
+.icon-about {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  margin-left: 20px;
 }
 
+.icon-about .tag {
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin: 0 0 5px 0;
+}
+.icon-about .content {
+  font-size: 1rem;
+  font-weight: 100;
+  /* height: 50px; */
+  margin: 0;
+}
 
-button{
-    background-color: #f68632;
-    border: none;
-    width: 50%;
-    height: 40px;
-    color: #fff;
-    font-size: 1.1rem;
+button {
+  background-color: #112d32;
+  border: none;
+  width: 50%;
+  height: 40px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+button:disabled {
+  background-color: grey;
 }

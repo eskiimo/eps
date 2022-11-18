@@ -1,42 +1,40 @@
-.footer{
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 40vh;
-    padding: 5vh 20vh 5vh 20vh ;
-
+.footer {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 40vh;
+  padding: 5vh 20vh 5vh 20vh;
 }
 
-.footer .txt{
-    color: white !important;
+.footer .txt {
+  color: white !important;
 }
 
-.footer .desc{
-    font-size: 14px;
+.footer .desc {
+  font-size: 14px;
 }
 
-.icons{
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
+.icons {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
 }
 
+.contact-icon i {
+  height: max-content;
 
-.contact-icon  i{
-    height: max-content;
-
-    font-size: 30px;
-    color:  #f68632;
+  font-size: 30px;
+  color: #254b45;
 }
-.rights{
-    position: absolute;
-    bottom: 15px;
-    padding: 0;
-    color: white;
-    font-size: 14px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 100;
+.rights {
+  position: absolute;
+  bottom: 15px;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
 }
-.rights span{
-    color: #f68632;
+.rights span {
+  color: #254b45;
 }

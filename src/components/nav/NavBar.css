@@ -1,81 +1,78 @@
-.navbar{
-    margin-top: 0 !important;
-    padding:0 100px 0 6vw ;
-    height: 10vh;
-    position: fixed;
-    z-index: 999;
-    background-color: #254b45;
-    /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19); */
+.navbar {
+  margin-top: 0 !important;
+  padding: 0 100px 0 6vw;
+  height: 10vh;
+  position: fixed;
+  z-index: 999;
+  background-color: #254b45;
+  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.navbar img{
-    width: 7vh;
+.navbar img {
+  width: 7vh;
 }
 /* 
 .navbar-collapse{
     background-color: #254b45;
 } */
 
-.navbar .row{
-    width: 100%;
-    justify-content: space-between;
+.navbar .row {
+  width: 100%;
+  justify-content: space-between;
 }
-.col-logo{
-    width: 100px;
+.col-logo {
+  width: 100px;
 }
-.navbar .col-links{
-    margin: auto;
-    display: flex;
-    text-align: flex-end;
-    justify-content: flex-end;
+.navbar .col-links {
+  margin: auto;
+  display: flex;
+  text-align: flex-end;
+  justify-content: flex-end;
 }
 
-.nav-links a{
-    margin-left: 20px;
-    color: #f68632;
-    text-decoration: none;
+.nav-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
 }
-.nav-links a:hover{
-    text-decoration: none;
-    color: #ff5417;
+.nav-links a:hover {
+  text-decoration: none;
+  color: #112d32;
 }
-.nav-links a:active{
-    color: #ff5417;
+.nav-links a:active {
+  color: #fff;
 }
-.nav-links{
-    color: #f68632 ; 
-    font-size: 24px;
-    font-weight: 900;
-    display: flex;
-    justify-content: flex-end;
-    justify-items: flex-end;
+.nav-links {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+  justify-items: flex-end;
 }
-.navbar-toggler{
+.navbar-toggler {
+  display: none;
+}
+.navbar-collapse {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .container {
+    padding-left: 0;
+    padding-right: 150px;
+  }
+  .navbar .avatar {
+    justify-content: flex-start;
+  }
+
+  .navbar-toggler {
+    display: inline;
+  }
+  .navbar-collapse {
+    display: inline;
+  }
+  .uncollapse {
     display: none;
-}
-.navbar-collapse{
-    display: none;
-}
-
-@media  screen and (max-width:700px) {
-    .navbar .container{
-        padding-left: 0;
-        padding-right: 150px;
-     
-     }
-        .navbar .avatar{
-            justify-content: flex-start;
-        }
-
-        .navbar-toggler{
-            display: inline;
-        }
-        .navbar-collapse{
-            display: inline;
-        }
-        .uncollapse{
-            display: none;
-        }
-        
-    
+  }
 }

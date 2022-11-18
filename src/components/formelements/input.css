@@ -1,26 +1,24 @@
 .form-control {
-    border-radius: 0;
-    border: 1px solid #f68632 ;
-    background-color: transparent;
-    color: #f68632;
-    font-size: 18px;
-    width: 100%;
-    min-height: 40px;
-   }
-   .error-text {
-    text-align: start;
-    color: rgb(253, 33, 85);
-   }
-   .form-control__invalid {
-    border: 2px solid rgb(253, 33, 85);
-    color: rgb(253, 33, 85);
-   }
-   .form-control:focus {
-    outline: none;
-    background-color: transparent;
-  
-    box-shadow: none;
-    font-size: 14px;
-    
-   }
+  border-radius: 0;
+  border: 1px solid #112d32;
+  background-color: transparent;
+  color: #112d32;
+  font-size: 18px;
+  width: 100%;
+  min-height: 40px;
+}
+.error-text {
+  text-align: start;
+  color: rgb(253, 33, 85);
+}
+.form-control__invalid {
+  border: 2px solid rgb(253, 33, 85);
+  color: rgb(253, 33, 85);
+}
+.form-control:focus {
+  outline: none;
+  background-color: transparent;
 
+  box-shadow: none;
+  font-size: 14px;
+}

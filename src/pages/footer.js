@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
@@ -13,14 +14,13 @@ const Footer = () => {
                </p>
                <div className="row icons">
                   <div className="col contact-icon">
-                     <a
-                        href="//github.com/eskiimo"
-                        target="_blank"
+                     <Link
+                        to='/contact'
                         rel="noreferrer"
                      >
                         {' '}
                         <i className="fab fa-whatsapp"> </i>{' '}
-                     </a>
+                     </Link>
                   </div>
                   <div className="col contact-icon">
                      <a
