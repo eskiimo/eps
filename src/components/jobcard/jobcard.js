@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Card, CardBody, CardImg, CardTitle, CardText } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardImg,
+  CardTitle,
+  CardText,
+  CardFooter,
+} from "reactstrap";
 
 import "./jobcard.css";
 
@@ -21,6 +28,11 @@ const JobCard = (props) => {
           </CardTitle>
 
           <CardText className="card-text">{cropped}</CardText>
+          <CardFooter>
+            {" "}
+            <p>see more</p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </CardFooter>
         </CardBody>
       </Card>
     </div>

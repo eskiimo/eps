@@ -110,8 +110,10 @@ const HomePage = () => {
           Electric power service Company for Testing Services
         </p>
         <button className="buton">
-          <i className="fa-sharp fa-solid fa-paper-plane"></i>{" "}
-          <NavLink to="/contact">CONTACT</NavLink>
+          <NavLink to="/contact">
+            <i className="fa-sharp fa-solid fa-paper-plane"></i>{" "}
+            <span className="hide">CONTACT</span>
+          </NavLink>
         </button>
       </div>
 
@@ -137,20 +139,16 @@ const HomePage = () => {
       </div>
 
       <div className="section section-5 " id="section-5">
-        <div className="row">
-          <div className="col col-md 6">
-            <p className="header5">Success Partners</p>
-            <p className="desc">
-              Which digital and sustainable transformations will Sweden
-              <br /> await in 2030? Find out how the country <br /> can change
-              for the better if we multiply our impact!
-            </p>
-          </div>
-          <div className="col col-md-6">
-            <div className=" row center">
-              <ProjectCards list={projects} />
-            </div>
-          </div>
+        <div className="col col-md-12">
+          <p className="header5">Clients</p>
+          <p className="desc">
+            Which digital and sustainable transformations will Sweden
+            <br /> await in 2030? Find out how the country <br /> can change for
+            the better if we multiply our impact!
+          </p>
+        </div>
+        <div className=" row center">
+          <ProjectCards list={projects} />
         </div>
       </div>
 

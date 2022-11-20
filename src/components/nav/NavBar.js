@@ -10,7 +10,7 @@ const ResponsiveAppBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <Navbar collapseOnSelect expand="lg" fixed="top">
+    <Navbar fixed="top">
       <div className="row nav-links ml-auto">
         <div className="col-logo">
           <NavLink to="/">

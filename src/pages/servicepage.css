@@ -1,7 +1,6 @@
 .service-page {
   margin-top: 10vh;
-  background-color: #254b45;
-  height: 100vh;
+  min-height: 100vh;
   color: #fff;
   padding: 10vw;
 }
@@ -15,6 +14,8 @@
 }
 
 .scol button {
+  background-color: #23272a;
+  border: 1px solid #fe6601;
   margin: 20px 20px 20px 0;
 }
 

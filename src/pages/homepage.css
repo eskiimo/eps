@@ -25,21 +25,21 @@
   /* background-color: #254b45; */
 }
 .section-1 .txt-primary {
-  font-size: 5rem;
+  font-size: 7vw;
   font-weight: 400;
   font-family: fantasy;
   color: white;
   width: 50%;
-  line-height: 10vh;
+  line-height: 80px;
 }
 .section-1 .txt-secondary {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 800;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
 }
 .section-1 .txt-desc {
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 400;
   color: white;
 }
@@ -56,11 +56,11 @@
 .section-2 .header1 {
   display: inline;
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 400;
 }
 .section-2 .txt-desc {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 400;
   color: white;
 }
@@ -85,7 +85,7 @@
 .section-4 .header1 {
   display: inline;
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 400;
   text-align: center;
 }
@@ -98,18 +98,33 @@
 
 .buton {
   position: fixed;
-  bottom: 8vh;
+  bottom: 6vh;
   right: 10vw;
   z-index: 99;
   background-color: #fe6601;
   border: none;
-  height: 50px;
-  width: 200px;
+  width: auto;
+  height: auto;
   font-size: 18px;
   font-weight: 200;
-  min-width: 20vh;
   min-height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
   text-align: center;
+}
+.buton i {
+  margin: 0 !important;
+}
+@media screen and (max-width: 435px) {
+  .hide {
+    display: none;
+  }
+  .buton {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+  }
 }
 
 .buton a {
@@ -124,25 +139,22 @@
   justify-content: center;
 }
 
-.section-5 {
-  background-color: #254b45;
-}
-
 .header5 {
   display: inline;
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
   font-weight: 400;
 }
 
 .section-5 .row {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   padding-bottom: 10vh;
 }
 
 .section-5 .desc {
   margin-top: 20px;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   color: white;
 }

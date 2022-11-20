@@ -1,7 +1,6 @@
 .section-3 {
-  background-color: #254b45;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   color: #fff;
 }
