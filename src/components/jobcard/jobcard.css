@@ -1,6 +1,6 @@
 .section-2 .whole-card {
   display: inline-block;
-  /* margin:1vw */
+  margin: 1%;
 }
 
 .whole-card:hover {
@@ -13,11 +13,9 @@
 }
 .card {
   border: none;
-
-  background-color: #112d32;
 }
 .card-body {
-  background-color: #112d32;
+  background-color: #444444;
   border-left: 3px solid #fff;
   font-size: 16px;
   max-height: 200px;
