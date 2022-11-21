@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import "./contactpage.css";
-import firestore from '../hooks/firebase';
-import {addDoc,collection} from '@firebase/firestore';
+import firestore from "../hooks/firebase";
+import { addDoc, collection } from "@firebase/firestore";
 
-import Spinner from 'react-bootstrap/Spinner';
+import Spinner from "react-bootstrap/Spinner";
 
-import {
-  Form,
-  FormGroup
-} from "reactstrap";
+import { Form, FormGroup } from "reactstrap";
 
 import {
   VALIDATOR_EMAIL,
@@ -21,7 +18,7 @@ import { useForm } from "../hooks/formhook";
 
 const ContactPage = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const ref = collection(firestore, "messages")
+  const ref = collection(firestore, "messages");
 
   const [formState, inputHandler] = useForm(
     {
@@ -35,19 +32,19 @@ const ContactPage = () => {
   const onSubmitHandler = async (event) => {
     event.preventDefault();
     let newMSG = {
-      name:formState.inputs.name.value,
-      email:formState.inputs.email.value,
-      message: formState.inputs.message.value
-    }    
-    setIsLoading(true)
-    
-    try{
-      setTimeout(2000)
-       await addDoc(ref,newMSG)
-      setIsLoading(false)
-    }catch(e){
-      console.log(e)
-      setIsLoading(false)
+      name: formState.inputs.name.value,
+      email: formState.inputs.email.value,
+      message: formState.inputs.message.value,
+    };
+    setIsLoading(true);
+
+    try {
+      setTimeout(2000);
+      await addDoc(ref, newMSG);
+      setIsLoading(false);
+    } catch (e) {
+      console.log(e);
+      setIsLoading(false);
     }
 
     // try {
@@ -72,25 +69,23 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="section section-3 row">
-      <div className="row row1">
-        <div className="contact-head">
-          <h1 >Contact Information</h1>
-          <p  className="p-desc">
+    <div className="section section-3 ">
+      <div className="row ">
+        <div className="col-sm-12 contact-head">
+          <h1>Contact Information</h1>
+          <p className="p-desc">
             for any inquiry about the buisiness or/and requisting a service
             please contact ..
           </p>
         </div>
-        <div className="contact-head">
-          <h1 >Get In Touch</h1>
-          <p className="p-desc">
-            send a message and we will get back to you
-          </p>
+        <div className="col col-xs-12 contact-head">
+          <h1>Get In Touch</h1>
+          <p className="p-desc">send a message and we will get back to you</p>
         </div>
       </div>
 
-      <div className="row row2">
-        <div className="icons">
+      <div className="row">
+        <div className="col1 col col-xs-10 col-md-6">
           <div className=" contact-icon">
             <a href="//github.com/eskiimo" target="_blank" rel="noreferrer">
               {" "}
@@ -133,7 +128,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div className="form-container">
+        <div className="col col-xs-10 col-md-6">
           <Form autoComplete="off" className="form" onSubmit={onSubmitHandler}>
             <FormGroup>
               <CustomInput
@@ -166,20 +161,23 @@ const ContactPage = () => {
                 onInput={inputHandler}
               />
             </FormGroup>
-           {
-           isLoading? (
-            <div className="form-button">
-            <Spinner animation="border" role="status">
-      <span className="visually-hidden">Loading...</span>
-    </Spinner>
-          </div>
-           ) : (
-             <div className="form-button">
-             <button disabled={!formState.isValid} type="submit" width={"30%"}>
-               Send
-             </button>
-           </div>
-           ) }
+            {isLoading ? (
+              <div className="form-button">
+                <Spinner animation="border" role="status">
+                  <span className="visually-hidden">Loading...</span>
+                </Spinner>
+              </div>
+            ) : (
+              <div className="form-button">
+                <button
+                  disabled={!formState.isValid}
+                  type="submit"
+                  width={"30%"}
+                >
+                  Send
+                </button>
+              </div>
+            )}
           </Form>
         </div>
       </div>
