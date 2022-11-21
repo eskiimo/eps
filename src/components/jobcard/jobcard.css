@@ -6,12 +6,20 @@
 .whole-card:hover {
   cursor: pointer;
 }
+.whole-card .card-img-top {
+  transition: 0.5s all ease-in-out;
+  width: 100%;
+}
+.whole-card:hover .card-img-top {
+  transform: scale(1.2);
+}
 
 .whole-card:hover .card-body {
   transform: translate(0, -10px);
   animation: animate 0.1s ease;
 }
 .card {
+  overflow: hidden;
   border: none;
   background-color: #23272a;
 }
@@ -25,11 +33,12 @@
   overflow-y: hidden;
 }
 .card-text {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 500;
   color: white;
 }
 .card-body .txt-secondary {
+  font-size: 26px;
   color: white;
 }
 .card-footer {
@@ -38,9 +47,9 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   text-align: end;
-
+  padding-left: 0;
   border: none;
 }
 

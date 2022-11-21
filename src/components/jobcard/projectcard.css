@@ -1,20 +1,15 @@
 .projectcard {
   margin-top: 20px;
-  padding: 4px;
-  size: auto;
+  height: 200px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  justify-items: center;
+  padding: 0;
 }
 
-.projectcard .card {
-  height: 300px;
-}
-.detail {
-  color: white;
-}
-.detail .row {
-  display: flex;
-  flex-direction: row;
+.projectcard img {
+  width: 100%;
+  object-fit: contain;
 }

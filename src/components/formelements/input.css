@@ -1,11 +1,11 @@
 .form-control {
   border-radius: 0;
-  border: 1px solid #112d32;
+  border: 1px solid #fe6601;
   background-color: transparent;
-  color: #112d32;
   font-size: 18px;
   width: 100%;
   min-height: 40px;
+  color: white;
 }
 .error-text {
   text-align: start;
@@ -16,9 +16,17 @@
   color: rgb(253, 33, 85);
 }
 .form-control:focus {
+  color: white;
   outline: none;
   background-color: transparent;
 
   box-shadow: none;
   font-size: 14px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2c2f33 inset !important;
+  -webkit-text-fill-color: #fff;
 }

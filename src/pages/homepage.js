@@ -51,54 +51,58 @@ const HomePage = () => {
   ];
   const projects = [
     {
-      image: "/logos/Citycenter.jpg",
+      image: "/logos/Citycenter.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "sdsdjskdjskdjskdjskdj",
     },
     {
-      image: "/logos/GCH.jpg",
+      image: "/logos/GCH.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.",
     },
     {
-      image: "/logos/GPC.jpg",
+      image: "/logos/GPC.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "sdsdjskdjskdjskdjskdj",
     },
     {
-      image: "/logos/QNB.jpg",
+      image: "/logos/QNB.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "sdsdjskdjskdjskdjskdj",
     },
     {
-      image: "/logos/NDC.jpg",
+      image: "/logos/NDC.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "sdsdjskdjskdjskdjskdj",
     },
     {
-      image: "/logos/mallAR.jpg",
+      image: "/logos/mallAR.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.",
     },
     {
-      image: "/logos/EGPost.jpg",
+      image: "/logos/EGPost.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "sdsdjskdjskdjskdjskdj",
     },
     {
-      image: "/logos/DPWORLD.jpg",
+      image: "/logos/DPWORLD.png",
       name: "Mohamad Kamal",
       title: "CEO & Founder",
       desc: "sdsdjskdjskdjskdjskdj",
     },
   ];
+
+  const scroll = (scrollOffset) => {
+    ref.current.scrollLeft += scrollOffset;
+  };
   return (
     <>
       <div className="section section-1" id="section-1">

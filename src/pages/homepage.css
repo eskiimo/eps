@@ -1,8 +1,8 @@
 .section {
-  min-height: 100vh;
-  width: 100%;
+  /* min-height: 100vh; */
+  min-width: 100%;
   padding-bottom: 100px;
-  padding: 10vh 20vh 0 20vh;
+  padding: 10vh 20vw 0 20vw;
 }
 @media (max-width: 1000px) {
   .section {
@@ -29,17 +29,16 @@
   font-weight: 400;
   font-family: fantasy;
   color: white;
-  width: 50%;
-  line-height: 80px;
+  line-height: 7vw;
 }
 .section-1 .txt-secondary {
-  font-size: 2vw;
+  font-size: 50px;
   font-weight: 800;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
 }
 .section-1 .txt-desc {
-  font-size: 1.2vw;
+  font-size: 18px;
   font-weight: 400;
   color: white;
 }
@@ -56,11 +55,11 @@
 .section-2 .header1 {
   display: inline;
   color: white;
-  font-size: 3vw;
+  font-size: 50px;
   font-weight: 400;
 }
 .section-2 .txt-desc {
-  font-size: 1.5vw;
+  font-size: 18px;
   font-weight: 400;
   color: white;
 }
@@ -142,19 +141,28 @@
 .header5 {
   display: inline;
   color: white;
-  font-size: 3vw;
+  font-size: 28px;
   font-weight: 400;
 }
 
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section-5 .row {
+  padding-top: 40px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 10vh;
+  /* flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll; */
+  width: 85%;
 }
 
 .section-5 .desc {
   margin-top: 20px;
-  font-size: 1.5vw;
+  font-size: 16px;
   color: white;
 }

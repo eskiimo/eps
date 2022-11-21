@@ -25,7 +25,7 @@
   bottom: 0;
   position: absolute;
   z-index: 90;
-  background: #112d32;
+  background: #23272a;
   color: white;
   height: 50px;
   width: 100%;
@@ -40,7 +40,7 @@
 }
 
 .overlay .name {
-  font-size: 1.8rem;
+  font-size: 20px;
 }
 .overlay .title {
   font-size: 1.3rem;

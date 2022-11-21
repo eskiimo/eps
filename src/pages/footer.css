@@ -36,3 +36,9 @@
 .rights span {
   color: #fe6601;
 }
+
+@media screen and (max-width: 435px) {
+  .footer {
+    padding: 10px;
+  }
+}
