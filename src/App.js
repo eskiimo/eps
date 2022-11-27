@@ -7,6 +7,7 @@ import ResponsiveAppBar from "./components/nav/NavBar";
 import HomePage from "./pages/homepage";
 import ContactPage from "./pages/contactpage";
 import ServicePage from "./pages/ServicePage";
+import Services from "./pages/services";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>
+            <Route path="/services" element={<Services />}></Route>
             <Route
               path="/services/:serviceId"
               element={<ServicePage />}

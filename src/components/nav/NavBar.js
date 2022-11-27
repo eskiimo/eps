@@ -18,8 +18,8 @@ const ResponsiveAppBar = () => {
           </NavLink>
         </div>
         <div className="col col-links">
-          <NavLink to="/" exact>
-            About
+          <NavLink to="/services" exact>
+            Services
           </NavLink>
 
           {/* <NavLink to="/blogs">Blogs</NavLink> */}

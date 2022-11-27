@@ -27,7 +27,7 @@
   background-color: #23272a;
   border-left: 3px solid #fe6601;
   font-size: 16px;
-  max-height: 200px;
+  max-height: 250px;
   min-height: 150px;
   line-height: 1.2rem;
   overflow-y: hidden;
@@ -51,6 +51,7 @@
   text-align: end;
   padding-left: 0;
   border: none;
+  height: 30px;
 }
 
 @keyframes animate {

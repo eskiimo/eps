@@ -5,104 +5,13 @@ import TeamCards from "../components/jobcard/teamcards";
 import { NavLink } from "react-router-dom";
 import Footer from "./footer";
 import "./homepage.css";
+import { services, team, projects } from "../hooks/data";
+import JobCard from "../components/jobcard/jobcard";
 
 const HomePage = () => {
-  const jobs = [
-    {
-      image: "https://picsum.photos/318/180",
-      title: "Residual current Device testing",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD. Earth leakage increases with each additional electrical appliance that is plugged in, and if RCD keeps tripping out it may be an overloaded circuit. Any faults we recommend that you have your wiring and appliances checked by an electrician to ascertain the fault if a RCD keeps tripping. The majority of electrical fatalities could have been prevented by the use of a properly installed RCD, and regular testing to ensure they are working correctly",
-    },
-    {
-      image: "https://picsum.photos/318/180",
-      title: "Residual current Device testing",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD. Earth leakage increases with each additional electrical appliance that is plugged in, and if RCD keeps tripping out it may be an overloaded circuit. Any faults we recommend that you have your wiring and appliances checked by an electrician to ascertain the fault if a RCD keeps tripping. The majority of electrical fatalities could have been prevented by the use of a properly installed RCD, and regular testing to ensure they are working correctly",
-    },
-    {
-      image: "https://picsum.photos/318/180",
-      title: "Residual current Device testing",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD. Earth leakage increases with each additional electrical appliance that is plugged in, and if RCD keeps tripping out it may be an overloaded circuit. Any faults we recommend that you have your wiring and appliances checked by an electrician to ascertain the fault if a RCD keeps tripping. The majority of electrical fatalities could have been prevented by the use of a properly installed RCD, and regular testing to ensure they are working correctly",
-    },
-    {
-      image: "https://picsum.photos/318/180",
-      title: "Residual current Device testing",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD. Earth leakage increases with each additional electrical appliance that is plugged in, and if RCD keeps tripping out it may be an overloaded circuit. Any faults we recommend that you have your wiring and appliances checked by an electrician to ascertain the fault if a RCD keeps tripping. The majority of electrical fatalities could have been prevented by the use of a properly installed RCD, and regular testing to ensure they are working correctly",
-    },
-  ];
-  const team = [
-    {
-      image: "https://picsum.photos/318/420",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.",
-    },
-    {
-      image: "https://picsum.photos/318/420",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-    {
-      image: "https://picsum.photos/318/420",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-  ];
-  const projects = [
-    {
-      image: "/logos/Citycenter.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-    {
-      image: "/logos/GCH.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.",
-    },
-    {
-      image: "/logos/GPC.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-    {
-      image: "/logos/QNB.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-    {
-      image: "/logos/NDC.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-    {
-      image: "/logos/mallAR.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.",
-    },
-    {
-      image: "/logos/EGPost.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-    {
-      image: "/logos/DPWORLD.png",
-      name: "Mohamad Kamal",
-      title: "CEO & Founder",
-      desc: "sdsdjskdjskdjskdjskdj",
-    },
-  ];
-
-  const scroll = (scrollOffset) => {
-    ref.current.scrollLeft += scrollOffset;
-  };
+  // const scroll = (scrollOffset) => {
+  //   ref.current.scrollLeft += scrollOffset;
+  // };
   return (
     <>
       <div className="section section-1" id="section-1">
@@ -128,8 +37,20 @@ const HomePage = () => {
         <p className="txt-desc">Example of Measuring Instruments</p>
 
         <div className=" row center">
-          <CardList list={jobs} />
+          <JobCard
+            jobImage="/assets/services/power-equality.jpg"
+            jobTitle="Power quality study"
+            jobDesc=" Analysis for ( Voltage- Current- Harmonics-Active & Reactive Power- P.F) The purpose of the electrical distribution system is to support proper operation of the loads. ... Whether it's used for troubleshooting purposes or to obtain baseline data, measuring/analyzing electrical system parameters is called power quality analysis"
+          />
+          <JobCard
+            jobImage="/assets/services/hi-pot.jpg"
+            jobTitle="HI Pot Test"
+            jobDesc=" Hi pot Test is short name of high potential (high voltage) Test and it is also known as Dielectric Withstand Test. A hi pot test checks for “good isolation"
+          />
         </div>
+        <NavLink className="more-services" to="/services">
+          More services ..
+        </NavLink>
       </div>
 
       <div className="section section-4" id="section-4">
