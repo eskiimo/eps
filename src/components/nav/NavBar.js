@@ -5,10 +5,10 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
 const ResponsiveAppBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <Navbar fixed="top">
       <div className="row nav-links ml-auto">
