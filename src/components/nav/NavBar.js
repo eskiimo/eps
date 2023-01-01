@@ -1,32 +1,54 @@
 import React, { useState } from "react";
 import { Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
-
-import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const ResponsiveAppBar = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const toggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
   return (
-    <Navbar fixed="top">
-      <div className="row nav-links ml-auto">
-        <div className="col-logo">
-          <NavLink to="/">
-            <img src="assets/epslogo.png" />
-          </NavLink>
-        </div>
-        <div className="col col-links">
-          <NavLink to="/services" exact>
-            Services
-          </NavLink>
+    <nav className="relative container mx-auto p-4 text-center	">
+      <div className="flex items-center justify-between">
+        {/* Logo */}
 
-          {/* <NavLink to="/blogs">Blogs</NavLink> */}
-          <NavLink to="/contact">Contact</NavLink>
+        <div className="pt-2 w-10 flex flex-row">
+          <img src="assets/epslogo.png" />
+          <Link
+            to="/"
+            hrefLang="#"
+            className="text-3xl text-cTextDark no-underline hover:text-cMain"
+          >
+            {" "}
+            EPS
+          </Link>{" "}
+        </div>
+
+        {/* menu  */}
+
+        <div className=" md:flex space-x-6 ">
+          <Link
+            to="/about"
+            hrefLang="#"
+            className="text-xl text-cTextDark no-underline hover:text-cMain"
+          >
+            {" "}
+            ABOUT
+          </Link>{" "}
+          <Link
+            to="/services"
+            hrefLang="#"
+            className="text-xl text-cTextDark no-underline hover:text-cMain"
+          >
+            {" "}
+            SERVICES
+          </Link>
+          <Link
+            to="/contact"
+            className="text-xl text-cTextDark no-underline hover:text-cMain"
+          >
+            {" "}
+            CONTACT
+          </Link>
         </div>
       </div>
-    </Navbar>
+    </nav>
   );
 };
 export default ResponsiveAppBar;
