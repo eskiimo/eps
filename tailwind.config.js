@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         cTextDark: "#301934",
         cMain: "#fe6601",
+        cDarkGrey: "#23272a",
       },
     },
   },

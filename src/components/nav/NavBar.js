@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const ResponsiveAppBar = () => {
   return (
-    <nav className="relative container mx-auto p-4 text-center	">
-      <div className="flex items-center justify-between">
+    <nav className="px-5  fixed w-screen justify-center bg-white  py-3 text-center	z-50">
+      <div className="flex mx-5 items-center justify-between">
         {/* Logo */}
 
         <div className="pt-2 w-10 flex flex-row">
