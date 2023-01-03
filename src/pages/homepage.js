@@ -57,14 +57,14 @@ const HomePage = () => {
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="h-screen w-full flex flex-column justify-center align-center"
+        className="h-screen flex flex-column justify-center align-center"
         id="section-4"
       >
         <p className="text-2xl text-center font-bold">
           Meet <span className="header2">Our Team</span>
         </p>
 
-        <div className="flex flex-row  mx-auto justify-between overflow-x-auto">
+        <div className="flex flex-row w-5/6 mx-auto justify-between overflow-x-auto">
           <TeamCards list={team} />
         </div>
       </div>
@@ -72,13 +72,13 @@ const HomePage = () => {
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="h-screen flex flex-column justify-center align-center m-5"
+        className="h-screen flex flex-column justify-center align-center md:m-5"
         id="section-5"
       >
         <div className="flex flex-column mx-auto justify-center w-3/5">
           <p className="font-bold text-3xl text-cDarkGrey">Clients</p>
         </div>
-        <div className=" flex flex-wrap w-4/6 mx-auto justify-between overflow-x-auto">
+        <div className=" flex flex-wrap w-5/6 md:w-4/6 mx-auto justify-center  overflow-x-auto">
           <ProjectCards list={projects} />
         </div>
       </div>

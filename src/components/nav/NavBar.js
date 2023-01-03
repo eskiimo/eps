@@ -50,14 +50,13 @@ const ReusableNav = (props) => {
             {props.links.map((link) => {
               return (
                 <li className="m-3 border-b-2">
-                  <Link
+                  <a
                     key={link}
-                    to={`#${link} `}
-                    hrefLang="#"
+                    href={`#${link} `}
                     className="text-xl text-cTextDark no-underline hover:text-cMain"
                   >
                     {link}
-                  </Link>
+                  </a>
                 </li>
               );
             })}

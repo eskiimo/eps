@@ -74,7 +74,7 @@
 .buton i {
   margin: 0 !important;
 }
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 700px) {
   .hide {
     display: none;
   }
