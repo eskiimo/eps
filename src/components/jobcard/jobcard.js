@@ -15,7 +15,7 @@ const JobCard = (props) => {
   const nav = useNavigate();
   var cropped = props.jobDesc.substring(0, 50) + "...";
   return (
-    <div className=" whole-card">
+    <div className=" whole-card m-2 overflow-x-none">
       <Card
         className="bg-cDarkGrey border-none overflow-hidden"
         onClick={() => {
@@ -24,16 +24,16 @@ const JobCard = (props) => {
       >
         <CardImg alt="Card image cap" src={props.jobImage} top width="100%" />
         <CardBody className=" border-l-2 border-cMain bg-cDarkGrey">
-          <CardTitle className="text-white text-lg " tag="h5">
+          <CardTitle className="text-white text-lg ">
             {props.jobTitle}
           </CardTitle>
 
           <CardText className="text-white text-md">{cropped}</CardText>
-          <CardFooter>
+          <div className="text-white flex flex-row justify-between align-center">
             {" "}
-            <p>see more</p>
-            <i class="fa-solid fa-arrow-right"></i>
-          </CardFooter>
+            <p className="m-1 text-semibold">See more</p>
+            <i class="fa-solid fa-arrow-right h-fit my-auto"></i>
+          </div>
         </CardBody>
       </Card>
     </div>

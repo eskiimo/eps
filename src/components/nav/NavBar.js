@@ -1,53 +1,72 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const ResponsiveAppBar = () => {
+const ReusableNav = (props) => {
+  const [expand, setExpand] = useState(false);
+
+  const toggleExpand = () => {
+    setExpand((prev) => !prev);
+  };
   return (
-    <nav className="px-5  fixed w-screen justify-center bg-white  py-3 text-center	z-50">
-      <div className="flex mx-5 items-center justify-between">
+    <nav className="relative container mx-auto p-1 text-center	">
+      <div className="flex items-center justify-between">
         {/* Logo */}
 
         <div className="pt-2 w-10 flex flex-row">
-          <img src="assets/epslogo.png" />
+          {props.logo ? <img src={props.logo} alt={props.title} /> : <></>}
           <Link
             to="/"
             hrefLang="#"
             className="text-3xl text-cTextDark no-underline hover:text-cMain"
           >
-            {" "}
-            EPS
+            {props.title}
           </Link>{" "}
         </div>
 
         {/* menu  */}
 
-        <div className=" md:flex space-x-6 ">
-          <Link
-            to="/about"
-            hrefLang="#"
-            className="text-xl text-cTextDark no-underline hover:text-cMain"
-          >
-            {" "}
-            ABOUT
-          </Link>{" "}
-          <Link
-            to="/services"
-            hrefLang="#"
-            className="text-xl text-cTextDark no-underline hover:text-cMain"
-          >
-            {" "}
-            SERVICES
-          </Link>
-          <Link
-            to="/contact"
-            className="text-xl text-cTextDark no-underline hover:text-cMain"
-          >
-            {" "}
-            CONTACT
-          </Link>
+        <div className="hidden sm:flex flex-row space-x-6 ">
+          {props.links.map((link) => {
+            return (
+              <a
+                key={link}
+                href={`#${link} `}
+                className="text-xl text-cTextDark no-underline hover:text-cMain"
+              >
+                {link}
+              </a>
+            );
+          })}
+        </div>
+        <div className="block sm:hidden text-2xl mx-3 ">
+          <button className="text-black" onClick={toggleExpand}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
         </div>
       </div>
+      {expand ? (
+        <div className="block sm:hidden flex-column">
+          <ul>
+            {props.links.map((link) => {
+              return (
+                <li className="m-3 border-b-2">
+                  <Link
+                    key={link}
+                    to={`#${link} `}
+                    hrefLang="#"
+                    className="text-xl text-cTextDark no-underline hover:text-cMain"
+                  >
+                    {link}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : (
+        <></>
+      )}
     </nav>
   );
 };
-export default ResponsiveAppBar;
+export default ReusableNav;

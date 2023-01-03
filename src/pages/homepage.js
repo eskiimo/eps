@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import Footer from "./footer";
 import "./homepage.css";
 import { services, team, projects } from "../hooks/data";
-import JobCard from "../components/jobcard/jobcard";
 
 const HomePage = () => {
   // const scroll = (scrollOffset) => {
@@ -28,10 +27,10 @@ const HomePage = () => {
         <p className="text-2xl font-bold">Electric Utility Provider</p>
 
         <button className="buton">
-          <NavLink to="/contact">
+          <a href="#Contact">
             <i className="fa-sharp fa-solid fa-paper-plane"></i>{" "}
             <span className="hide">CONTACT</span>
-          </NavLink>
+          </a>
         </button>
       </div>
 
@@ -39,7 +38,7 @@ const HomePage = () => {
 
       <div
         className=" h-screen flex flex-column jusify-center align-center"
-        id="section-2"
+        id="Services"
       >
         <div className="block jusify-center">
           <p className="text-3xl text-center font-bold">
@@ -50,45 +49,22 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex flex-row w-4/6 mx-auto justify-between overflow-x-auto ">
-          <div className="m-2">
-            <JobCard
-              jobImage="/assets/services/power-equality.jpg"
-              jobTitle="Power quality study"
-              jobDesc=" Analysis for ( Voltage- Current- Harmonics-Active & Reactive Power- P.F) The purpose of the electrical distribution system is to support proper operation of the loads. ... Whether it's used for troubleshooting purposes or to obtain baseline data, measuring/analyzing electrical system parameters is called power quality analysis"
-            />
-          </div>
-          <div className="m-2">
-            <JobCard
-              jobImage="/assets/services/power-equality.jpg"
-              jobTitle="Power quality study"
-              jobDesc=" Analysis for ( Voltage- Current- Harmonics-Active & Reactive Power- P.F) The purpose of the electrical distribution system is to support proper operation of the loads. ... Whether it's used for troubleshooting purposes or to obtain baseline data, measuring/analyzing electrical system parameters is called power quality analysis"
-            />
-          </div>{" "}
-          <div className="m-2">
-            <JobCard
-              jobImage="/assets/services/power-equality.jpg"
-              jobTitle="Power quality study"
-              jobDesc=" Analysis for ( Voltage- Current- Harmonics-Active & Reactive Power- P.F) The purpose of the electrical distribution system is to support proper operation of the loads. ... Whether it's used for troubleshooting purposes or to obtain baseline data, measuring/analyzing electrical system parameters is called power quality analysis"
-            />
-          </div>
+        <div className="flex flex-row  w-5/6 mx-auto justify-between overflow-x-auto ">
+          <CardList list={services} />
         </div>
-        <NavLink className="text-3xl text-center font-bold" to="/services">
-          More services
-        </NavLink>
       </div>
 
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="h-screen flex flex-column justify-center align-center"
+        className="h-screen w-full flex flex-column justify-center align-center"
         id="section-4"
       >
         <p className="text-2xl text-center font-bold">
           Meet <span className="header2">Our Team</span>
         </p>
 
-        <div className="flex flex-row w-4/6 mx-auto justify-between overflow-x-auto">
+        <div className="flex flex-row  mx-auto justify-between overflow-x-auto">
           <TeamCards list={team} />
         </div>
       </div>
@@ -106,8 +82,9 @@ const HomePage = () => {
           <ProjectCards list={projects} />
         </div>
       </div>
-
-      <Footer />
+      <div id="Contact">
+        <Footer />
+      </div>
     </>
   );
 };

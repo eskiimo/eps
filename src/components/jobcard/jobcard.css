@@ -1,5 +1,7 @@
-.section-2 .whole-card {
+.whole-card {
   display: inline-block;
+  min-width: 230px;
+  max-height: 460px;
 }
 
 .whole-card:hover {

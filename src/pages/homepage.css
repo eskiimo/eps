@@ -8,7 +8,7 @@
 
 .section-2 .header1 {
   display: inline;
-  color: white;
+  color: black;
   font-size: 50px;
   font-weight: 400;
 }
@@ -74,7 +74,7 @@
 .buton i {
   margin: 0 !important;
 }
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 535px) {
   .hide {
     display: none;
   }
