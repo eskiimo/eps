@@ -1,12 +1,18 @@
 import React from "react";
-import { Card, CardImg } from "reactstrap";
 
 import "./projectcard.css";
 
 const ProjectCards = (props) => {
   return props.list.map((item) => (
-    <div key={item.title} className="col-xs-6 col-md-3 projectcard">
-      <img alt="Card image cap" src={item.image} />
+    <div
+      key={item.title}
+      className="xs:w-1/6 md:w-1/4 flex flex row justify-center p-0 m-0"
+    >
+      <img
+        className="xs:w-2/6 object-scale-down"
+        alt="Card image "
+        src={item.image}
+      />
     </div>
   ));
 };

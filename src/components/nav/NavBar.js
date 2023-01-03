@@ -1,32 +1,72 @@
 import React, { useState } from "react";
-import { Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import "./NavBar.css";
+const ReusableNav = (props) => {
+  const [expand, setExpand] = useState(false);
 
-const ResponsiveAppBar = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const toggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  const toggleExpand = () => {
+    setExpand((prev) => !prev);
+  };
   return (
-    <Navbar fixed="top">
-      <div className="row nav-links ml-auto">
-        <div className="col-logo">
-          <NavLink to="/">
-            <img src="assets/epslogo.png" />
-          </NavLink>
-        </div>
-        <div className="col col-links">
-          <NavLink to="/services" exact>
-            Services
-          </NavLink>
+    <nav className="relative container mx-auto p-1 text-center	">
+      <div className="flex items-center justify-between">
+        {/* Logo */}
 
-          {/* <NavLink to="/blogs">Blogs</NavLink> */}
-          <NavLink to="/contact">Contact</NavLink>
+        <div className="pt-2 w-10 flex flex-row">
+          {props.logo ? <img src={props.logo} alt={props.title} /> : <></>}
+          <Link
+            to="/"
+            hrefLang="#"
+            className="text-3xl text-cTextDark no-underline hover:text-cMain"
+          >
+            {props.title}
+          </Link>{" "}
+        </div>
+
+        {/* menu  */}
+
+        <div className="hidden sm:flex flex-row space-x-6 ">
+          {props.links.map((link) => {
+            return (
+              <a
+                key={link}
+                href={`#${link} `}
+                className="text-xl text-cTextDark no-underline hover:text-cMain"
+              >
+                {link}
+              </a>
+            );
+          })}
+        </div>
+        <div className="block sm:hidden text-2xl mx-3 ">
+          <button className="text-black" onClick={toggleExpand}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
         </div>
       </div>
-    </Navbar>
+      {expand ? (
+        <div className="block sm:hidden flex-column">
+          <ul>
+            {props.links.map((link) => {
+              return (
+                <li className="m-3 border-b-2">
+                  <Link
+                    key={link}
+                    to={`#${link} `}
+                    hrefLang="#"
+                    className="text-xl text-cTextDark no-underline hover:text-cMain"
+                  >
+                    {link}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ) : (
+        <></>
+      )}
+    </nav>
   );
 };
-export default ResponsiveAppBar;
+export default ReusableNav;

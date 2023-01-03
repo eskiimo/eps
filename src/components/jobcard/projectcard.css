@@ -1,15 +1,7 @@
 .projectcard {
-  margin-top: 20px;
-  height: 200px;
-  padding: 5px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  padding: 0;
-}
-
-.projectcard img {
-  width: 100%;
-  object-fit: contain;
 }
