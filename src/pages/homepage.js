@@ -17,7 +17,7 @@ const HomePage = () => {
         className="flex flex-column h-screen text-center justify-center text-cTextDark"
         id="section-1 "
       >
-        <div className="mx-auto w-1/6 flex justify-center align-center ">
+        <div className="mx-auto w-3/5 md:w-1/6 flex justify-center align-center ">
           <img alt="logo" src="/assets/epslogo.png"></img>
         </div>
         <p className="text-2xl font-bold">
