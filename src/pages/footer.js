@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="flex flex-column relative  p-5 bg-cDarkGrey  ">
-      <div className="block sm:flex  md:flex-row justify-between mb-16">
-        <div className="block md:flex w-1/3 mx-3 md:mx-5  justify-start  ">
+      <div className="block text-center md:flex  md:flex-row justify-between mb-16">
+        <div className="block text-center mx-auto md:flex md:w-1/3  md:mx-5  justify-center md:justify-start   ">
           <i className="fa-sharp fa-solid fa-map-location-dot mr-1 text-2xl text-cMain">
             {" "}
           </i>
@@ -13,14 +13,14 @@ const Footer = () => {
             Block 19 Atlas Building, St. 9, Mokattam
           </p>
         </div>
-        <div className="block md:flex w-1/3 mx-3 md:mx-5  justify-start  ">
+        <div className="block md:flex md:w-1/3 mx-auto md:mx-5  justify-start  ">
           <i className="fa-sharp fa-solid fa-square-phone mr-1 text-2xl text-cMain">
             {" "}
           </i>
           <p className="text-white text-lg">+201154773599</p>
         </div>
 
-        <div className="block md:flex w-1/3 mx-3 md:mx-5  justify-start  ">
+        <div className="block md:flex md:w-1/3 mx-auto md:mx-5  justify-start  ">
           <i className="fa-sharp fa-solid fa-envelope mr-1 text-2xl text-cMain">
             {" "}
           </i>

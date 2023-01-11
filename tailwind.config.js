@@ -8,6 +8,12 @@ module.exports = {
         cMain: "#fe6601",
         cDarkGrey: "#23272a",
       },
+      margin: {
+        "10px": "10px",
+      },
+      fontFamily: {
+        dosis: ["Dosis", "sans-serif"],
+      },
     },
   },
   plugins: [],

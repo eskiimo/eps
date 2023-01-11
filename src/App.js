@@ -4,14 +4,12 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import HomePage from "./pages/homepage";
-import ContactPage from "./pages/contactpage";
 import ServicePage from "./pages/ServicePage";
-import Services from "./pages/services";
 import ReusableNav from "./components/nav/NavBar";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className="app font-dosis">
       <Router>
         <ReusableNav
           links={["Services", "Contact"]}
@@ -22,7 +20,6 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             {/* <Route path="/contact" element={<ContactPage />}></Route> */}
-            <Route path="/services" element={<Services />}></Route>
             <Route
               path="/services/:serviceId"
               element={<ServicePage />}

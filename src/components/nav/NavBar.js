@@ -38,9 +38,9 @@ const ReusableNav = (props) => {
             );
           })}
         </div>
-        <div className="block sm:hidden text-2xl mx-3 ">
+        <div className="block sm:hidden text-3xl mx-3 ">
           <button className="text-black" onClick={toggleExpand}>
-            <i className="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars text-3xl "></i>
           </button>
         </div>
       </div>
