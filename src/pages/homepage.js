@@ -78,7 +78,7 @@ const HomePage = () => {
         <div className="flex flex-column mx-auto justify-center w-3/5">
           <p className="font-bold text-3xl text-cDarkGrey">Clients</p>
         </div>
-        <div className=" flex flex-wrap w-5/6 md:w-4/6 mx-auto justify-center  overflow-x-auto">
+        <div className=" flex flex-wrap w-2/6 md:w-4/6 mx-auto justify-center  overflow-x-auto">
           <ProjectCards list={projects} />
         </div>
       </div>
