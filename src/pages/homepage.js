@@ -35,7 +35,7 @@ const HomePage = () => {
       {/* //////////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className=" my-5 flex flex-column jusify-center align-center"
+        className=" my-[150px] flex flex-column jusify-center align-center"
         id="Services"
       >
         <div className="  block jusify-center">
@@ -55,7 +55,7 @@ const HomePage = () => {
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="my-5 flex flex-column justify-center align-center"
+        className="my-[150px] flex flex-column justify-center align-center"
         id="section-4"
       >
         <div className="flex flex-column mx-auto my-3 justify-center w-5/6">
@@ -70,11 +70,11 @@ const HomePage = () => {
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="my-[50px] flex flex-column justify-center align-center md:m-5 "
+        className="my-[150px] flex flex-column justify-center align-center md:mx-5 "
         id="section-5"
       >
         <div className="flex flex-column mx-auto my-3 justify-center w-5/6">
-          <p className=" font-bold text-3xl text-cDarkGrey">Clients</p>
+          <p className=" font-extrabold	 text-3xl text-cDarkGrey">Clients</p>
         </div>
         <div className=" flex flex-wrap w-5/6  mx-auto justify-center  overflow-x-auto">
           <ProjectCards list={projects} />
