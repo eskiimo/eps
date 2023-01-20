@@ -62,7 +62,7 @@ const HomePage = () => {
           <p className=" font-bold text-3xl text-cDarkGrey">Meet our team</p>
         </div>
 
-        <div className="flex flex-row w-5/6 mx-auto justify-between overflow-x-auto">
+        <div className="flex flex-row w-5/6 mx-auto justify-between overflow-x-wrap">
           <TeamCards list={team} />
         </div>
       </div>
