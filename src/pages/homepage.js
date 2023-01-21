@@ -55,12 +55,12 @@ const HomePage = () => {
           <p className="text-3xl text-center font-bold">
             Our <span className="header2">Services</span>
           </p>
-          <p className="text-2xl text-center font-semibold">
+          <p className="text-2xl mb-5 text-center font-semibold">
             Example of Measuring Instruments
           </p>
         </div>
 
-        <div className="flex flex-row  w-5/6 mx-auto justify-between overflow-x-auto z-10">
+        <div className="flex flex-row p-5 w-5/6 mx-auto justify-between overflow-x-auto z-10">
           <CardList list={services} toggle={toggleModal} handle={handleClick} />
         </div>
         <Modal

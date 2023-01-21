@@ -11,7 +11,7 @@ export const services = [
   },
   {
     image: "/assets/services/partial-discharge.jpg",
-    title: "Partial discharge (PD) diagnostic test.",
+    title: "PD diagnostic test.",
     desc: "Partial discharges (PD) are small electrical sparks that occur within the insulation of medium and high voltage electrical assets. Each discrete partial discharge is the result of an electrical breakdown of an air pocket within the insulation. These discharges erode insulation and eventually result in insulation failure.",
   },
   {

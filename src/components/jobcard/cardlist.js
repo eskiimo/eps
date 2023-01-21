@@ -4,9 +4,9 @@ import "./jobcard.css";
 import { Card, CardBody, CardImg, CardTitle, CardText } from "reactstrap";
 const CardList = (props) => {
   return props.list.map((card, index) => (
-    <div key={index} className=" whole-card m-2 overflow-x-none">
+    <div key={index} className="  whole-card m-2 overflow-x-none">
       <Card
-        className="bg-cDarkGrey border-none overflow-hidden"
+        className="h-[52vh] bg-cDarkGrey border-none overflow-hidden"
         onClick={() => {
           props.toggle(index);
         }}
