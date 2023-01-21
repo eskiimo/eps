@@ -7,9 +7,10 @@ module.exports = {
         cTextDark: "#301934",
         cMain: "#fe6601",
         cDarkGrey: "#23272a",
+        cLightGrey: "#FAFAFA",
       },
-      margin: {
-        "10px": "10px",
+      skew: {
+        n6: "-6deg",
       },
       fontFamily: {
         dosis: ["Dosis", "sans-serif"],

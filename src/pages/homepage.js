@@ -26,15 +26,17 @@ const HomePage = () => {
         className="  flex flex-column h-screen text-center justify-center text-cTextDark"
         id="section-1 "
       >
-        <div className="mx-auto w-2/5 md:w-1/6 flex justify-center align-center ">
-          <img alt="logo" src="/assets/epslogo.png"></img>
+        <div className="w-[100%] h-full overflow-hidden  skew-y-6 bg-slate-200 absolute z-1"></div>
+        <div className="z-10">
+          <div className="mx-auto w-2/5 md:w-1/6 flex justify-center align-center ">
+            <img alt="logo" src="/assets/epslogo.png"></img>
+          </div>
+          <p className="block text-2xl font-bold">
+            Electrical Testing & Measurements.{" "}
+          </p>
+
+          <p className="block text-2xl font-bold">Electric Utility Provider</p>
         </div>
-        <p className="block text-2xl font-bold">
-          Electrical Testing & Measurements.{" "}
-        </p>
-
-        <p className="block text-2xl font-bold">Electric Utility Provider</p>
-
         {/* <button className="buton">
           <a href="#Contact">
             <i className="fa-sharp fa-solid fa-paper-plane"></i>{" "}
@@ -46,7 +48,7 @@ const HomePage = () => {
       {/* //////////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className=" my-[150px] flex flex-column jusify-center align-center"
+        className=" my-[150px] h-screen flex flex-column jusify-center align-center z-10"
         id="Services"
       >
         <div className="  block jusify-center">
@@ -58,7 +60,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex flex-row  w-5/6 mx-auto justify-between overflow-x-auto ">
+        <div className="flex flex-row  w-5/6 mx-auto justify-between overflow-x-auto z-10">
           <CardList list={services} toggle={toggleModal} handle={handleClick} />
         </div>
         <Modal
@@ -104,25 +106,29 @@ const HomePage = () => {
         className="my-[150px] flex flex-column justify-center align-center"
         id="section-4"
       >
-        <div className="flex flex-column mx-auto my-3 justify-center w-5/6">
-          <p className=" font-bold text-3xl text-cDarkGrey">Meet our team</p>
-        </div>
+        <div className="w-[100%] h-full overflow-hidden  skew-y-n6 bg-slate-200 absolute z-1"></div>
 
-        <div className="flex flex-wrap w-5/6 mx-auto sm:mx-5 justify-center">
-          <TeamCards list={team} />
+        <div className="z-10">
+          <div className="flex flex-column mx-auto my-3 justify-center w-5/6">
+            <p className=" font-bold text-3xl text-cDarkGrey">Meet our team</p>
+          </div>
+
+          <div className="flex flex-wrap w-5/6 mx-auto sm:mx-5 justify-center">
+            <TeamCards list={team} />
+          </div>
         </div>
       </div>
 
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="my-[150px] flex flex-column justify-center align-center md:mx-5 "
+        className="my-[150px] h-screen flex flex-column justify-center align-center md:mx-5 z-10 "
         id="section-5"
       >
-        <div className="flex flex-column mx-auto my-3 justify-center w-5/6">
-          <p className=" font-extrabold	 text-3xl text-cDarkGrey">Clients</p>
+        <div className="flex flex-column mx-auto my-3 justify-center w-5/6 z-10">
+          <p className="mb-5 font-extrabold	 text-3xl text-cDarkGrey">Clients</p>
         </div>
-        <div className=" flex flex-wrap w-5/6  mx-auto justify-center  overflow-x-auto">
+        <div className=" flex flex-wrap w-5/6  mx-auto justify-center  overflow-x-auto z-10">
           <ProjectCards list={projects} />
         </div>
       </div>

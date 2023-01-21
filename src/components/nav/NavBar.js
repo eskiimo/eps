@@ -8,7 +8,7 @@ const ReusableNav = (props) => {
     setExpand((prev) => !prev);
   };
   return (
-    <nav className="relative container mx-auto p-1 text-center	">
+    <nav className="relative container mx-auto p-1 text-center z-10	">
       <div className="flex items-center justify-between">
         {/* Logo */}
 
