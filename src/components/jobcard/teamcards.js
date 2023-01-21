@@ -4,9 +4,9 @@ import { Card, CardImg } from "reactstrap";
 import "./teamcards.css";
 
 const TeamCards = (props) => {
-  return props.list.map((item) => (
+  return props.list.map((item, index) => (
     <div
-      key={item.title}
+      key={index}
       className="bg-cDarkGrey mx-2 border-none overflow-hidden teamcard whole-card"
     >
       <Card>

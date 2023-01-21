@@ -73,18 +73,21 @@ export const services = [
 ];
 export const team = [
   {
+    key: 1,
     image: "https://picsum.photos/318/420",
     name: "Mohamad Kamal",
     title: "CEO & Founder",
     desc: "Some electrical appliances and old wiring may have a normal small amount of earth leakage which can trip a RCD.",
   },
   {
+    key: 2,
     image: "https://picsum.photos/318/420",
     name: "Mohamad Kamal",
     title: "CEO & Founder",
     desc: "sdsdjskdjskdjskdjskdj",
   },
   {
+    key: 3,
     image: "https://picsum.photos/318/420",
     name: "Mohamad Kamal",
     title: "CEO & Founder",
