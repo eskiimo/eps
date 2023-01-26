@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { ToggleButton } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
-import "./servicepage.css";
+// import "./servicepage.css";
 
 const ServicePage = (props) => {
   useEffect(() => {
