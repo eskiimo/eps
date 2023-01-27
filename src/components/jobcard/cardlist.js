@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./jobcard.css";
 import { Card, CardBody, CardImg, CardTitle, CardText } from "reactstrap";

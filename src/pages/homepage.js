@@ -6,6 +6,7 @@ import Footer from "./footer";
 import { services, team, projects } from "../hooks/data";
 
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import Carousel from "../components/carousel";
 
 const HomePage = () => {
   const [isToast, setIsToast] = useState(false);
@@ -19,6 +20,11 @@ const HomePage = () => {
   const toggleModal = () => {
     setIsToast((prev) => !prev);
   };
+  const images = [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg",
+    "https://example.com/image3.jpg",
+  ];
 
   return (
     <>
@@ -60,8 +66,15 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex flex-row p-5 w-5/6 mx-auto justify-between overflow-x-auto z-10">
+        {/* <div className="flex flex-row p-5 w-5/6 mx-auto justify-between overflow-x-auto z-10">
           <CardList list={services} toggle={toggleModal} handle={handleClick} />
+        </div> */}
+
+        <div className="flex flex-row p-5 w-11/12 mx-auto justify-between overflow-x-hidden z-10">
+          {/* <Carousel list={services} toggle={toggleModal} handle={handleClick} />
+           */}
+
+          <Carousel images={images} />
         </div>
         <Modal
           backdrop={true}
