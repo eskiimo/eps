@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="flex flex-column relative h-[50vh] p-5 bg-cDarkGrey justify-evenly ">
       <div className="block text-center md:flex  md:flex-row justify-between mb-16">
-        <div className="block text-center mx-auto md:flex md:w-1/3  md:mx-5  justify-center md:justify-start   ">
+        <div className="block md:flex md:w-1/3 mx-auto md:mx-5  justify-start  ">
           <i className="fa-sharp fa-solid fa-map-location-dot mr-1 text-2xl text-cMain">
             {" "}
           </i>
