@@ -1,23 +1,43 @@
 import React, { useState } from "react";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const previous = () => {
+  const handlePreviousClick = () => {
     const newIndex = currentIndex - 1;
-    setCurrentIndex(newIndex < 0 ? images.length - 1 : newIndex);
+    setCurrentIndex(newIndex < 0 ? items.length - 1 : newIndex);
   };
 
-  const next = () => {
+  const handleNextClick = () => {
     const newIndex = currentIndex + 1;
-    setCurrentIndex(newIndex === images.length ? 0 : newIndex);
+    setCurrentIndex(newIndex === items.length ? 0 : newIndex);
   };
+
+  const { image, title, desc } = items[currentIndex];
 
   return (
-    <div>
-      <button onClick={previous}>Previous</button>
-      <img src={images[currentIndex]} alt="Carousel Image" />
-      <button onClick={next}>Next</button>
+    <div className="block justify-center">
+      <div className="flex flex-row h-[50vh] ease-in-out	">
+        <img className="flex " src={image} alt={title} />
+        <div className="m-5 p-2 ">
+          <h2>{title}</h2>
+          <p className="text-xl">{desc}</p>
+        </div>
+      </div>
+      <div className="flex justify-center">
+        <button
+          className="bg-cDarkGrey rounded-full text-white px-2 m-2"
+          onClick={handlePreviousClick}
+        >
+          <i className="text-lg fa-solid fa-caret-left"></i>
+        </button>
+        <button
+          className="bg-cDarkGrey rounded-full text-white px-2 m-2"
+          onClick={handleNextClick}
+        >
+          <i className="text-lg fa-solid fa-caret-right"></i>
+        </button>
+      </div>
     </div>
   );
 };

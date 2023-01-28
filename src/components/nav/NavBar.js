@@ -31,7 +31,7 @@ const ReusableNav = (props) => {
               <a
                 key={link}
                 href={`#${link} `}
-                className="text-xl text-cTextDark no-underline hover:text-cMain"
+                className="text-2xl text-cTextDark no-underline hover:text-cMain"
               >
                 {link}
               </a>

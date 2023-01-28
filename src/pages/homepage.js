@@ -74,7 +74,7 @@ const HomePage = () => {
           {/* <Carousel list={services} toggle={toggleModal} handle={handleClick} />
            */}
 
-          <Carousel images={images} />
+          <Carousel items={services} />
         </div>
         <Modal
           backdrop={true}
