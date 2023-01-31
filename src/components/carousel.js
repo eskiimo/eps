@@ -17,7 +17,7 @@ const Carousel = ({ items }) => {
 
   return (
     <div className="block justify-center">
-      <div className="flex flex-row h-[50vh]  duration-500 	">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 duration-500 ">
         <img className="flex rounded-2xl" src={image} alt={title} />
         <div className="m-5 p-2 ">
           <h2>{title}</h2>
