@@ -66,13 +66,8 @@ const HomePage = () => {
           </p>
         </div>
 
-        {/* <div className="flex flex-row p-5 w-5/6 mx-auto justify-between overflow-x-auto z-10">
-          <CardList list={services} toggle={toggleModal} handle={handleClick} />
-        </div> */}
 
-        <div className="flex flex-row p-5 w-11/12 mx-auto justify-between overflow-x-hidden z-10">
-          {/* <Carousel list={services} toggle={toggleModal} handle={handleClick} />
-           */}
+        <div className="flex flex-row p-3 w-11/12 mx-auto justify-between  z-10">
 
           <Carousel items={services} />
         </div>
