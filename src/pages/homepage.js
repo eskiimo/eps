@@ -66,7 +66,7 @@ const HomePage = () => {
           </p>
         </div>
 
-        <div className="flex flex-row p-5 w-11/12 mx-auto justify-between overflow-x-hidden z-10">
+        <div className="flex flex-row p-3 w-11/12 mx-auto justify-between  z-10">
           <Carousel items={services} />
         </div>
         <Modal
