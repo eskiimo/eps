@@ -1,30 +1,13 @@
 import React, { useEffect, useState } from "react";
-import CardList from "../components/jobcard/cardlist";
 import ProjectCards from "../components/jobcard/projectcard";
 import TeamCards from "../components/jobcard/teamcards";
 import Footer from "./footer";
 import { services, team, projects } from "../hooks/data";
 
-import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import Carousel from "../components/carousel";
+import MyForm from "../components/jobcard/myform";
 
 const HomePage = () => {
-  const [isToast, setIsToast] = useState(false);
-  const [index, setIndex] = useState(0);
-  const [displayedService, setDisplayedService] = useState(services[0]);
-  const handleClick = (index) => {
-    toggleModal();
-    // setDisplayedService(services[index]);
-  };
-
-  const toggleModal = () => {
-    setIsToast((prev) => !prev);
-  };
-  const images = [
-    "https://example.com/image1.jpg",
-    "https://example.com/image2.jpg",
-    "https://example.com/image3.jpg",
-  ];
 
   return (
     <>
@@ -43,12 +26,7 @@ const HomePage = () => {
 
           <p className="block text-2xl font-bold">Electric Utility Provider</p>
         </div>
-        {/* <button className="buton">
-          <a href="#Contact">
-            <i className="fa-sharp fa-solid fa-paper-plane"></i>{" "}
-            <span className="hide">CONTACT</span>
-          </a>
-        </button> */}
+       
       </div>
 
       {/* //////////////////////////////////////////////////////////////////////////////// */}
@@ -71,41 +49,7 @@ const HomePage = () => {
 
           <Carousel items={services} />
         </div>
-        <Modal
-          backdrop={true}
-          centered
-          fullscreen="sm"
-          size="xl"
-          toggle={toggleModal}
-          isOpen={isToast}
-        >
-          <ModalHeader toggle={toggleModal}>
-            <h3> info</h3>{" "}
-          </ModalHeader>
-          <ModalBody>
-            <div className="col ">
-              <div className="  justify-center mx-5">
-                <img src={displayedService.image} />
-                <button
-                  className="block bg-cDarkGrey text-lg text-white my-3 py-2 px-5"
-                  onClick={() => {
-                    alert("will open Modal");
-                  }}
-                >
-                  {" "}
-                  Calculate
-                </button>
-              </div>
-              <div className="w-full">
-                <h1 className="my-3">{displayedService.title}</h1>
-                <h3 className="m-5">{displayedService.desc}</h3>
-              </div>
-            </div>
-          </ModalBody>
-          <ModalFooter>
-            <button text="Close" onClick={toggleModal} />
-          </ModalFooter>
-        </Modal>
+       
       </div>
 
       {/* ////////////////////////////////////////////////////////////////////////// */}
@@ -130,7 +74,7 @@ const HomePage = () => {
       {/* ////////////////////////////////////////////////////////////////////////// */}
 
       <div
-        className="my-[150px] h-screen flex flex-column justify-center align-center md:mx-5 z-10 "
+        className="h-screen flex flex-column justify-center align-center md:mx-5 z-10 "
         id="section-5"
       >
         <div className="flex flex-column mx-auto my-3 justify-center w-5/6 z-10">
@@ -140,7 +84,20 @@ const HomePage = () => {
           <ProjectCards list={projects} />
         </div>
       </div>
-      <div id="Contact">
+
+
+      {/*  ///////////////////////////////////////////////////////////////////// */}
+      <div  className="h-screen flex flex-column justify-center  md:mx-5 z-10 "
+        id="section-6">
+         <div className="flex flex-column mx-auto my-3 justify-center w-5/6 z-10">
+          <p className="mb-5 font-extrabold	 text-3xl text-cDarkGrey">Contact Us</p>
+        </div>
+        <MyForm/>
+      </div>
+
+
+      {/* //////////////////////////////////////////////////////////////////////// */}
+      <div id="footer">
         <Footer />
       </div>
     </>
