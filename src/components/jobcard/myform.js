@@ -8,7 +8,7 @@ import './myform.css'
 import ErrorText from '../formelements/errorText';
 import { Spinner } from 'reactstrap';
 
-const MyForm = ()=>{
+const MyForm = (props)=>{
   const[isLoading,setIsLoading] =useState(false)
 
   const formik = useFormik({
@@ -22,7 +22,10 @@ const MyForm = ()=>{
       console.log(values)
       
       axios.post('https://sheet.best/api/sheets/e332dc07-2fc1-4555-ba5a-4ce5b32c46ef', values).then(
-        res=>{console.log(res)}
+        res=>{
+          console.log(res)
+          props.toggle()
+        }
       ).catch(error =>{
         console.log(error)
       })

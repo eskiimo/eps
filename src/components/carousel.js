@@ -17,9 +17,9 @@ const Carousel = ({ items }) => {
 
   return (
 
-    <div className="flex-column justify-center h-[80vh] relative ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 duration-500 ">
-        <img className="flex mx-auto rounded-2xl" src={image} alt={title} />
+    <div className="flex-column  justify-center h-[60vh] relative ">
+      <div className="grid  grid-cols-1 md:grid-cols-2 gap-4 duration-500 ">
+        <img className="flex md:h-[80%] mx-auto rounded-2xl" src={image} alt={title} />
         <div className="md:m-5 p-2 xs:overflow-y-scroll">
 
           <h2>{title}</h2>
@@ -28,7 +28,7 @@ const Carousel = ({ items }) => {
       </div>
 
 
-      <div className="flex justify-center relative bottom-0 left-0">
+      <div className="md:absolute flex justify-center  bottom-0 left-[50%] ">
 
         <button
           className="bg-cDarkGrey rounded-full text-white px-2 m-2"
