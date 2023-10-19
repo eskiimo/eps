@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         cTextDark: "#301934",
-        cMain: "#fe6601",
-        cDarkGrey: "#23272a",
+        cMain: "#E2622C",
+        cDarkGrey: "#3a3a3a",
         cLightGrey: "#FAFAFA",
       },
       skew: {
