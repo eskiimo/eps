@@ -1,0 +1,38 @@
+.card {
+  position: relative;
+  background-color: black;
+  color: white;
+  height: 600px;
+}
+
+.img-div {
+  overflow: hidden;
+  display: flex;
+  height: 50%;
+}
+.img-div img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-body {
+  padding: 2em;
+}
+
+.card-body h1 {
+  font-size: 2.5em !important;
+}
+.card-body p {
+  font-size: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card .img-div img {
+  transition: 0.5s all ease-in-out;
+}
+.card:hover .img-div img {
+  transform: scale(1.2);
+}

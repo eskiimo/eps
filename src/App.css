@@ -1,3 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  background-color: #1d1919;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section {
+  margin: 300px 10vw 300px 10vw;
+}
+ul {
+  list-style: none;
+}
+.col {
+  padding: 0;
+}
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  text-align: center;
+  color: #e1e1e1;
+  & span {
+    color: #f9d342;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    font-size: 11px;
+  }
+}

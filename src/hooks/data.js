@@ -94,7 +94,7 @@ export const team = [
     desc: "sdsdjskdjskdjskdjskdj",
   },
 ];
-export const projects = [
+export const clients = [
   {
     image: "/logos/Citycenter.png",
     name: "Mohamad Kamal",

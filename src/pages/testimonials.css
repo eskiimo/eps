@@ -1,0 +1,18 @@
+#testimonials {
+  display: grid;
+  grid-gap: 3em;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 100px));
+}
+.client {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client img {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+}
