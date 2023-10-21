@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { services } from "../hooks/data";
 import "./servicePage.css";
 
-const ServicePage = () => {
+export default function SDetails() {
   const index = useParams().id;
   const service = services[index];
   console.log();
@@ -21,5 +21,4 @@ const ServicePage = () => {
       </div>
     </section>
   );
-};
-export default ServicePage;
+}

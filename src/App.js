@@ -5,7 +5,7 @@ import NavBar from "./components/nav/NavBar";
 import HomePage from "./pages/homepage";
 import Footer from "./components/footer/footer";
 import AboutPage from "./pages/aboutPage";
-import ServicePage from "./pages/servicePage";
+import SDetails from "./pages/serviceDetail";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/service/:id" element={<ServicePage />} />
+          <Route path="/service/:id" element={<SDetails />} />
         </Routes>
         <Footer />
 
