@@ -1,71 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./navbar.css";
 
-const ReusableNav = (props) => {
-  const [expand, setExpand] = useState(false);
-
-  const toggleExpand = () => {
-    setExpand((prev) => !prev);
-  };
+const NavBar = () => {
   return (
-    <nav className="relative container mx-auto p-1 text-center z-10	">
-      <div className="flex items-center justify-between">
-        {/* Logo */}
+    <nav>
+      <img id="logo" alt="logo" src="/assets/epslogo.png" />
+      <ul className="nav-links">
+        <li className="navlink">
+          <Link to="/">HOME</Link>
+        </li>
+        <li className="navlink">
+          <Link to="/about">ABOUT</Link>
+        </li>
 
-        <div className="pt-2 w-10 flex flex-row">
-          {props.logo ? <img src={props.logo} alt={props.title} /> : <></>}
-          <Link
-            to="/"
-            hrefLang="#"
-            className="text-3xl text-cTextDark no-underline hover:text-cMain"
-          >
-            {props.title}
-          </Link>{" "}
-        </div>
-
-        {/* menu  */}
-
-        <div className="hidden sm:flex flex-row space-x-6 ">
-          {props.links.map((link) => {
-            return (
-              <a
-                key={link}
-                href={`#${link} `}
-                className="text-2xl text-cTextDark no-underline hover:text-cMain"
-              >
-                {link}
-              </a>
-            );
-          })}
-        </div>
-        <div className="block sm:hidden text-3xl mx-3 ">
-          <button className="text-black" onClick={toggleExpand}>
-            <i className="fa-solid fa-bars text-3xl "></i>
-          </button>
-        </div>
-      </div>
-      {expand ? (
-        <div className="block sm:hidden flex-column">
-          <ul>
-            {props.links.map((link) => {
-              return (
-                <li className="m-3 border-b-2">
-                  <a
-                    key={link}
-                    href={`#${link} `}
-                    className="text-xl text-cTextDark no-underline hover:text-cMain"
-                  >
-                    {link}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      ) : (
-        <></>
-      )}
+        {/* <li className="navlink">
+          <Link to="/contact">CONTACT</Link>
+        </li> */}
+      </ul>
+      <span>
+        <i className="fa-solid fa-bars hamburger"></i>
+      </span>
     </nav>
   );
 };
-export default ReusableNav;
+
+export default NavBar;

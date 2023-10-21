@@ -1,0 +1,36 @@
+#about {
+  margin: 10vh 0;
+  padding: 10vw;
+  background-image: url("../../public/assets/hv.jpg");
+
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e1e1e1;
+}
+.about {
+  width: 50%;
+  padding: 3em 0;
+}
+.about h1 {
+  font-size: 3rem;
+}
+.about p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.about button {
+  background-color: #fbb514;
+  color: #1e1e1e;
+  font-size: 18px;
+  padding: 0.5em 2em;
+  border: 1px solid #1e1e1e;
+}
+
+@media (max-width: 550px) {
+  .about {
+    width: 90%;
+    padding: 3em 0;
+  }
+}

@@ -1,32 +1,27 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
+import NavBar from "./components/nav/NavBar";
 import HomePage from "./pages/homepage";
-import ServicePage from "./pages/ServicePage";
-// import  from "./pages/myform";
-import ReusableNav from "./components/nav/NavBar";
+import Footer from "./components/footer/footer";
+import AboutPage from "./pages/aboutPage";
+import ServicePage from "./pages/servicePage";
 
 const App = () => {
   return (
-    <div className="app font-dosis">
+    <div className="app ">
       <Router>
-        <ReusableNav
-          links={["Services", "Contact"]}
-          title="EPS"
-          logo="/assets/epslogo.png"
-        />
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<HomePage />}></Route>
-            {/* <Route path="/contact" element={<ContactPage />}></Route> */}
-            <Route
-              path="/services/:serviceId"
-              element={<ServicePage />}
-            ></Route>
-          </Routes>
-        </div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/service/:id" element={<ServicePage />} />
+        </Routes>
+        <Footer />
+
+        <p className="copyright">
+          &#169; 2022<span className=""> EPS. </span> All rightes reserved.
+        </p>
       </Router>
     </div>
   );
