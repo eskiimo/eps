@@ -1,6 +1,5 @@
 #service-page {
   margin: 10vh 6vw;
-  min-height: 100vh;
   & h2 {
     color: #fbb514;
   }
