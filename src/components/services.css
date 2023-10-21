@@ -17,19 +17,20 @@
   margin: 2em 0;
 }
 .capsole {
-  color: #f9d342;
+  color: #fbb514;
   padding: 5px 10px;
   margin: 3px 1em 3px 0;
   text-align: center;
   align-items: center;
-  border: 1px solid #f9d342;
+  border: 1px solid #fbb514;
   border-radius: 16px;
 }
 
 .projects {
+  height: 70vh;
   display: grid;
-  grid-gap: 3em;
+  grid-gap: 4em;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
 }

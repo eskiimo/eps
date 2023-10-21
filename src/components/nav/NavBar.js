@@ -11,12 +11,12 @@ const NavBar = () => {
           <Link to="/">HOME</Link>
         </li>
         <li className="navlink">
-          <Link href="/">ABOUT</Link>
+          <Link to="/about">ABOUT</Link>
         </li>
 
-        <li className="navlink">
-          <Link to="/order">CONTACT</Link>
-        </li>
+        {/* <li className="navlink">
+          <Link to="/contact">CONTACT</Link>
+        </li> */}
       </ul>
       <span>
         <i className="fa-solid fa-bars hamburger"></i>

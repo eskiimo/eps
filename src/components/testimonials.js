@@ -7,8 +7,8 @@ export default function Testimonials() {
   return (
     <section id="testimonials">
       {clients.map((client, index) => (
-        <div className="client">
-          <img src={client.image} alt={client.name} key={index} />
+        <div className="client" key={index}>
+          <img src={client.image} alt={client.name} />
         </div>
       ))}
     </section>

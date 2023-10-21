@@ -13,6 +13,7 @@ export default function About() {
           freedom to serve their customers and markets in the best way possible,
           the structure is geared toward creating value for customers
         </p>
+        <button>MORE</button>
       </div>
     </section>
   );

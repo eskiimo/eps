@@ -1,0 +1,31 @@
+#service-page {
+  margin: 10vh 6vw;
+  min-height: 100vh;
+  & h2 {
+    color: #fbb514;
+  }
+}
+.ser-grid {
+  padding: 1em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  & .ser-txt {
+    color: #e1e1e1;
+  }
+}
+.ser-grid img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* @media (max-width: 600px) {
+  .ser-grid {
+  
+    & .ser-txt {
+      width: 80%;
+      padding-left: 1em;
+    }
+  }
+} */

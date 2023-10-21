@@ -1,32 +1,25 @@
 import React, { useEffect, useState } from "react";
-// import "./servicepage.css";
+import { useParams } from "react-router-dom";
+import { services } from "../hooks/data";
+import "./servicePage.css";
 
-const ServicePage = (props) => {
-  useEffect(() => {
-    console.log(props);
-  });
+const ServicePage = () => {
+  const index = useParams().id;
+  const service = services[index];
+  console.log();
   return (
-    <div className="section service-page">
-      <div className="row ">
-        <div className="col col-md-5 scol">
-          <img src={props.service.jobImage} />
-          <button
-            onClick={() => {
-              alert("will open Modal");
-              //   props.toggle();
-              console.log(props);
-            }}
-          >
-            {" "}
-            Calculate
-          </button>
+    <section id="service-page">
+      <h2>EPS Services</h2>
+      <div className="ser-grid">
+        <div className="ser-txt">
+          <h1>{service.title}</h1>
+          <article>{service.desc}</article>
         </div>
-        <div className="col col-md-6">
-          <h1>{props.service.jobTitle}</h1>
-          <h3>{props.service.jobDesc}</h3>
+        <div>
+          <img src={service.image} alt={service.title} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default ServicePage;

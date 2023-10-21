@@ -3,7 +3,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 3px 8%;
+  margin: 3px 16vw;
 }
 .nav-links {
   margin: 0;
@@ -20,7 +20,7 @@ nav {
     white-space: nowrap;
     text-decoration: none;
     font-weight: bold;
-    color: #f9d342;
+    color: #fbb514;
   }
   & a:hover {
     color: #000;
@@ -33,7 +33,7 @@ nav {
 }
 
 #logo {
-  height: 50px;
+  height: 70px;
   margin: 10px 0;
 }
 .hamburger {
@@ -41,7 +41,7 @@ nav {
   height: 30px;
   width: 30px;
   font-size: 24px;
-  color: #f9d342;
+  color: #fbb514;
 }
 
 @media (max-width: 750px) {

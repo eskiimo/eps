@@ -1,20 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./service-card.css";
 const ServiceCard = (props) => {
   return (
-    <div className="card">
+    <Link className="card" to={"/service/" + props.index}>
       <div className="img-div">
         <img alt="service" src={props.image} />
       </div>
       <div className="card-body">
         <h1 className="">{props.title}</h1>
 
-        <p className=" ">{props.desc}</p>
+        <article>{props.desc.substring(0, 150) + " ..."}</article>
 
         <i className="fa-solid fa-arrow-right"></i>
       </div>
-    </div>
+    </Link>
   );
 };
 

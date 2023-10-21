@@ -19,6 +19,17 @@ footer {
   height: 100%;
   object-fit: contain;
 }
+footer a {
+  color: #e1e1e1;
+}
+
+footer li {
+  margin-bottom: 5px;
+}
+i {
+  color: #fbb514;
+  font-size: 24px;
+}
 
 @media (max-width: 760px) {
   footer {

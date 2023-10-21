@@ -4,6 +4,8 @@ import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import HomePage from "./pages/homepage";
 import Footer from "./components/footer/footer";
+import AboutPage from "./pages/aboutPage";
+import ServicePage from "./pages/servicePage";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/service/:id" element={<ServicePage />} />
         </Routes>
         <Footer />
 

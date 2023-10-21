@@ -9,25 +9,41 @@ export default function Footer() {
         <img className="footer-img" alt="footer" src="/assets/epslogo.png" />
       </div>
       <ul>
-        <h4>Doormat Navigation</h4>
+        <h4>Navigation</h4>
         <li>Home</li>
         <li>About</li>
-        <li>Menu</li>
-        <li>Reservation</li>
-        <li>Order Online</li>
-        <li>Login</li>
+        <li>Careers</li>
+        <li>Services</li>
       </ul>
       <ul>
-        <h4>Contact</h4>
-        <li>St 20, Mokattam, Cairo</li>
-        <li>+201154773599</li>
-        <li>info@eps.com.eg</li>
+        <h4>ADDRESS</h4>
+        <li>
+          <a href="https://maps.app.goo.gl/9EuVsxaKPxDFU6kh8" target="_blank">
+            Find Us On Map <i className="fa-solid fa-map-location"></i>
+          </a>
+        </li>
+        <li>St. 20, Mokattam, Cairo</li>
       </ul>{" "}
       <ul>
-        <h4>Social Media</h4>
-        <li>FaceBook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
+        <h4> CONTACT</h4>
+        <li>
+          <a href="https://www.facebook.com/EPSHOSARY" target="_blank">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/mohamed-el-hosary-19180a66/"
+            target="_blank"
+          >
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info@eps.com.eg" target="_blank">
+            <i className="fa-solid fa-envelope"></i>
+          </a>
+        </li>
       </ul>
     </footer>
   );
