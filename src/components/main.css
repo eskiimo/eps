@@ -12,19 +12,29 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 #hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0;
   color: #f6b401;
+  padding-right: 10vw;
 }
 #hero h2 {
   color: #e0e1ea;
-  /* font-size: 1em; */
+  margin-top: 0;
+  font-size: 3em;
 }
 
 #hero img {
   max-width: 400px;
   width: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 400px) {
+  #hero h1 {
+    font-size: 2.5rem;
+    padding-right: 0;
+  }
 }

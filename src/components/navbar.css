@@ -1,9 +1,30 @@
 nav {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3px 16vw;
+}
+.nav-1 {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3px 16vw;
+}
+.nav-2 {
+  width: 100%;
+  display: flex;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  & a {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #1c1c1e;
+  }
+  & a:hover {
+    color: #fbb514;
+  }
 }
 .nav-links {
   margin: 0;
@@ -32,16 +53,12 @@ nav {
   border-radius: 18px;
 }
 
-#logo {
-  height: 70px;
-  margin: 10px 0;
-}
 .hamburger {
   display: none;
   height: 30px;
   width: 30px;
-  font-size: 24px;
-  color: #fbb514;
+  font-size: 28px;
+  color: #1c1c1e;
 }
 
 @media (max-width: 750px) {

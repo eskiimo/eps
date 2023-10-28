@@ -2,7 +2,7 @@
   position: relative;
   background-color: black;
   color: white;
-  height: 100%;
+  height: 600px;
 }
 
 .img-div {
@@ -40,7 +40,7 @@
   transform: scale(1.2);
 }
 
-.fa-solid {
+.more {
   position: absolute;
   bottom: 20px;
   right: 20px;

@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
 const NavBar = () => {
   return (
     <nav>
-      <img id="logo" alt="logo" src="/assets/epslogo.png" />
-      <span className="navlink">
-        <Link to="/">EPS</Link>
-      </span>
-      <ul className="nav-links">
-        <li className="navlink">
-          <Link to="/">HOME</Link>
-        </li>
-        <li className="navlink">
-          <Link to="/about">ABOUT</Link>
-        </li>
+      <div className="nav-1">
+        <div className="brand">
+          <img alt="logo" src="/assets/epslogo.png" width={70} height={70} />
 
-        {/* <li className="navlink">
-          <Link to="/contact">CONTACT</Link>
-        </li> */}
-      </ul>
-      <span>
-        <i className="fa-solid fa-bars hamburger"></i>
-      </span>
+          <Link to="/">EPS</Link>
+        </div>
+        <ul className="nav-links">
+          <li className="navlink">
+            <Link to="/">HOME</Link>
+          </li>
+          <li className="navlink">
+            <Link to="/about">ABOUT</Link>
+          </li>
+        </ul>
+        <span>
+          <i className="fa-solid fa-bars hamburger"></i>
+        </span>
+      </div>
+      {/* <div className="nav-2"> EPS &gt; Home &gt; </div> */}
     </nav>
   );
 };

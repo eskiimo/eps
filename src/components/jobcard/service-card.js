@@ -13,7 +13,7 @@ const ServiceCard = (props) => {
 
         <article>{props.desc.substring(0, 150) + " ..."}</article>
       </div>
-      <i className="fa-solid fa-arrow-right"></i>
+      <i className="more fa-solid fa-arrow-right"></i>
     </Link>
   );
 };
