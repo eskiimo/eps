@@ -1,5 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: #1d1919;
+  background-color: #ededee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
@@ -28,7 +31,7 @@ a {
 
 .copyright {
   text-align: center;
-  color: #e1e1e1;
+  color: #1c1c1e;
   & span {
     color: #fbb514;
   }

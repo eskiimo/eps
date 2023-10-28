@@ -1,6 +1,6 @@
 footer {
   /* background-color: #333333; */
-  color: #edefee;
+  color: #1c1c1e;
   padding: 3em;
   display: grid;
   gap: 1em;
@@ -20,7 +20,7 @@ footer {
   object-fit: contain;
 }
 footer a {
-  color: #e1e1e1;
+  color: #1c1c1e;
 }
 
 footer li {

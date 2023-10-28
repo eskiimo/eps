@@ -16,7 +16,7 @@ export default function Services() {
       <div className="capsolls">
         {services.map((i, index) => (
           <Link to={"/service/" + index} key={index}>
-            <p className="capsole">{i.title}</p>
+            <article className="capsole">{i.title}</article>
           </Link>
         ))}
       </div>

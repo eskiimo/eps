@@ -5,14 +5,12 @@ export default function Main() {
   return (
     <main>
       <section id="hero">
-        <div className="">
-          <h1 className="">Electrical Testing & Measurements. </h1>
-          <h2 className="">Electric Utility Provider</h2>
-        </div>
-
+        <h1 className="">Electrical Testing & Measurements.</h1>
+        <h2> Electric Utility Provider</h2>
+        {/* 
         <div className="center">
           <img alt="logo" src="/assets/epslogo.png"></img>
-        </div>
+        </div> */}
       </section>
     </main>
   );

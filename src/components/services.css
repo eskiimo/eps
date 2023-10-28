@@ -1,13 +1,13 @@
 #services h1 {
   font-size: 2.5rem;
-  color: #e1e1e1;
+  color: #1c1c1e;
   margin-bottom: 0;
 }
 
 #services h3 {
   margin-top: 0;
   font-size: 1.5rem;
-  color: #e1e1e1;
+  color: #1c1c1e;
 }
 .capsolls {
   width: 60%;
@@ -17,12 +17,13 @@
   margin: 2em 0;
 }
 .capsole {
-  color: #fbb514;
+  color: #1c1c1e;
+  font-weight: 600;
   padding: 5px 10px;
   margin: 3px 1em 3px 0;
   text-align: center;
   align-items: center;
-  border: 1px solid #fbb514;
+  background-color: #f6b401;
   border-radius: 16px;
 }
 

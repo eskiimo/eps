@@ -1,4 +1,4 @@
-#testimonials {
+.clients {
   display: grid;
   grid-gap: 3em;
   justify-content: center;
@@ -15,4 +15,11 @@
   width: 100%;
   object-fit: contain;
   position: relative;
+}
+
+#testimonials {
+  border-top: 1px solid #1c1c1e;
+  & h1 {
+    font-size: 2em;
+  }
 }

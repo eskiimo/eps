@@ -9,12 +9,11 @@ const ServiceCard = (props) => {
         <img alt="service" src={props.image} />
       </div>
       <div className="card-body">
-        <h1 className="">{props.title}</h1>
+        <h1>{props.title}</h1>
 
         <article>{props.desc.substring(0, 150) + " ..."}</article>
-
-        <i className="fa-solid fa-arrow-right"></i>
       </div>
+      <i className="fa-solid fa-arrow-right"></i>
     </Link>
   );
 };

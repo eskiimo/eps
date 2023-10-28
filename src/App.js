@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/nav/NavBar";
+import NavBar from "./components/NavBar";
 import HomePage from "./pages/homepage";
 import Footer from "./components/footer/footer";
 import AboutPage from "./pages/aboutPage";
@@ -20,7 +20,7 @@ const App = () => {
         <Footer />
 
         <p className="copyright">
-          &#169; 2022<span className=""> EPS. </span> All rightes reserved.
+          &#169; 2023<span className=""> EPS. </span> All rightes reserved.
         </p>
       </Router>
     </div>

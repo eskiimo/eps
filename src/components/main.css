@@ -1,18 +1,26 @@
+main {
+  /* background-color: #1c1c1e; */
+  background-image: url("/public/assets/hv.jpg");
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* filter: ; */
+  height: 70vh;
+  display: flex;
+}
 #hero {
-  display: grid;
-  grid-gap: 2em;
-  padding: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 #hero h1 {
-  font-size: 3em;
-  color: #fbb514;
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: #f6b401;
 }
 #hero h2 {
-  font-size: 2.5em;
-  color: #e1e1e1;
+  color: #e0e1ea;
+  /* font-size: 1em; */
 }
 
 #hero img {
