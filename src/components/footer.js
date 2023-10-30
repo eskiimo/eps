@@ -5,7 +5,6 @@ export default function Footer() {
   return (
     <footer>
       <div className="img-container">
-        {" "}
         <img className="footer-img" alt="footer" src="/assets/epslogo.png" />
       </div>
       <ul>

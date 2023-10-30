@@ -1,25 +1,35 @@
-html {
-  scroll-behavior: smooth;
-}
+html,
 body {
+  padding: 0;
+  margin: 0;
+}
+.app {
   background-color: #ededee;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y proximity; */
 }
 section {
   margin: 10vh 16vw;
   padding-bottom: 10px;
+  /* scroll-snap-align: center; */
+}
+footer {
+  /* scroll-snap-align: center; */
 }
 ul {
   list-style: none;
 }
-.col {
+/* .col {
   padding: 0;
 }
 .row {
   padding: 0;
   margin: 0;
-}
+} */
 a {
   text-decoration: none;
 }

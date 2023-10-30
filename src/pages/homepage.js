@@ -13,7 +13,7 @@ const HomePage = () => {
     setShowModal((prev) => !prev);
   };
   return (
-    <>
+    <div className="home">
       <Main />
       <br />
       <Services />
@@ -49,7 +49,7 @@ const HomePage = () => {
           </button>
         </ModalFooter>
       </Modal>
-    </>
+    </div>
   );
 };
 export default HomePage;
